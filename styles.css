@@ -1,3 +1,12 @@
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Ensures padding and border are included in width/height calculations */
+}
+
 body {
     font-family: 'Quicksand', sans-serif;
     background-color: #ffffff;
@@ -87,6 +96,34 @@ body {
     margin-bottom: 5px
 }
 
+#playPauseButton {
+    display: flex;
+    flex-direction: column;
+    /* Align children vertically */
+    align-items: center;
+    /* Center-align children horizontally */
+    justify-content: center;
+    /* Center-align children vertically */
+    background: none;
+    border: 2px solid black;
+    /* Black border as specified */
+    border-radius: 10px;
+    /* Rounded corners for the rectangle */
+    cursor: pointer;
+    padding: 5px 10px;
+    width: 60px;
+    margin-left: 10px;
+    /* Set width and height to the same size for a square */
+    height: 60px;
+    /* Padding inside the button */
+}
+
+#playPauseImage {
+    width: 15px;
+    height: auto;
+    margin-bottom: 2px;
+}
+
 .tweet-institute {
     display: flex;
     align-items: flex-start;
@@ -116,6 +153,80 @@ body {
     font-size: 14px;
     color: #000000;
 }
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.player-footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    /* Ensures the footer spans the entire width of the viewport */
+    height: 70px;
+    background-color: #f8f8f8;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    /* Align children to the left */
+    padding: 10px;
+}
+
+.play-container {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+    /* Ensures there is spacing between the button and the progress bar */
+}
+
+#controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#progressContainer {
+    flex-grow: 1;
+    /* Takes up all available space after accounting for the play button */
+    height: 2px;
+    background-color: #000;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+    margin-right: 20px;
+}
+
+#progressBar {
+    width: 0;
+    height: 100%;
+    background-color: #D3D3D3;
+    /* Changed for visibility */
+}
+
+#progressCircle {
+    width: 10px;
+    height: 10px;
+    background-color: #1FB36E;
+    border-radius: 50%;
+    position: absolute;
+    top: -4px;
+    left: 0;
+    cursor: pointer;
+    user-select: none;
+}
+
+#progressTime {
+    font-size: 14px;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+}
+
 
 @media (max-width: 600px) {
     .container {

@@ -2120,6 +2120,88 @@
             </div>
         </div>
     </div>
+
+    <footer class="player-footer">
+        <div id="controls">
+            <button id="playPauseButton" onclick="togglePlayPause()">
+                <img id="playPauseImage" src="assets/buttonPlay.svg" alt="Play">
+                <div id="progressTime">0:00</div>
+            </button>
+        </div>
+        <div id="progressContainer" onclick="seek(event)">
+            <div id="progressBar"></div>
+            <div id="progressCircle" draggable="true"></div>
+        </div>
+        <audio id="audioPlayer" src="assets/audio.mp3"></audio>
+    </footer>
+
+    <script>
+        var audio = document.getElementById('audioPlayer');
+        var playPauseButton = document.getElementById('playPauseButton');
+        var playPauseImage = document.getElementById('playPauseImage');
+        var progressBar = document.getElementById('progressBar');
+        var progressCircle = document.getElementById('progressCircle');
+        var progressTime = document.getElementById('progressTime');
+        var isDragging = false;
+
+        function togglePlayPause() {
+            if (audio.paused) {
+                audio.play();
+                playPauseImage.src = 'assets/buttonPause.svg';
+            } else {
+                audio.pause();
+                playPauseImage.src = 'assets/buttonPlay.svg';
+            }
+        }
+
+        audio.addEventListener('timeupdate', function () {
+            if (!isDragging) {
+                var progress = (audio.currentTime / audio.duration) * 100;
+                progressBar.style.width = progress + '%';
+                progressCircle.style.left = progress + '%'; // Corrected reference
+                updateProgressTime(audio.currentTime);
+            }
+        });
+
+        audio.addEventListener('ended', function () {
+            playPauseImage.src = 'assets/buttonPlay.svg';
+            progressBar.style.width = '0%';
+            progressCircle.style.left = '0%';
+            updateProgressTime(0);
+        });
+
+        progressCircle.addEventListener('dragstart', function (event) {
+            isDragging = true;
+        });
+
+        progressCircle.addEventListener('dragend', function (event) {
+            isDragging = false;
+            var containerRect = progressContainer.getBoundingClientRect();
+            var newTime = ((event.clientX - containerRect.left) / containerRect.width) * audio.duration;
+            audio.currentTime = newTime;
+            updateProgressTime(newTime);
+        });
+
+        function updateProgressTime(currentTime) {
+            var minutes = Math.floor(currentTime / 60);
+            var seconds = Math.floor(currentTime % 60);
+            if (seconds < 10) {
+                seconds = '0' + seconds;
+            }
+            progressTime.textContent = minutes + ':' + seconds;
+        }
+
+        function seek(event) {
+            var containerRect = progressContainer.getBoundingClientRect();
+            var newTime = ((event.clientX - containerRect.left) / containerRect.width) * audio.duration;
+            audio.currentTime = newTime;
+            var progress = (audio.currentTime / audio.duration) * 100;
+            progressBar.style.width = progress + '%';
+            progressCircle.style.left = progress + '%'; // Ensure this reference is consistent
+            updateProgressTime(newTime);
+        }
+    </script>
+
 </body>
 
 </html>
