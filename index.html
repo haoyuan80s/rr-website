@@ -2177,22 +2177,27 @@
             updateProgressTime(0);
         });
 
+        // Mouse events
         progressCircle.addEventListener('mousedown', function (event) {
             isDragging = true;
             document.addEventListener('mousemove', onMouseMove);
             document.addEventListener('mouseup', onMouseUp);
         });
 
+        // Touch events
+        progressCircle.addEventListener('touchstart', function (event) {
+            isDragging = true;
+            document.addEventListener('touchmove', onTouchMove);
+            document.addEventListener('touchend', onTouchEnd);
+        });
+
         function onMouseMove(event) {
-            var containerRect = progressContainer.getBoundingClientRect();
-            var newTime = ((event.clientX - containerRect.left) / containerRect.width) * audio.duration;
-            if (newTime >= 0 && newTime <= audio.duration) {
-                audio.currentTime = newTime;
-                var progress = (audio.currentTime / audio.duration) * 100;
-                progressBar.style.width = progress + '%';
-                progressCircle.style.left = progress + '%';
-                updateProgressTime(newTime);
-            }
+            seek(event.clientX);
+        }
+
+        function onTouchMove(event) {
+            var touch = event.touches[0];
+            seek(touch.clientX);
         }
 
         function onMouseUp() {
@@ -2201,6 +2206,17 @@
             document.removeEventListener('mouseup', onMouseUp);
         }
 
+        function onTouchEnd() {
+            isDragging = false;
+            document.removeEventListener('touchmove', onTouchMove);
+            document.removeEventListener('touchend', onTouchEnd);
+        }
+
+        function onMouseUp() {
+            isDragging = false;
+            document.removeEventListener('mousemove', onMouseMove);
+            document.removeEventListener('mouseup', onMouseUp);
+        }
 
         progressCircle.addEventListener('dragstart', function (event) {
             event.preventDefault();
