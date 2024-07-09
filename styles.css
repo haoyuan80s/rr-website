@@ -8,7 +8,7 @@ body {
 }
 
 body {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Nunito', sans-serif;
     background-color: #ffffff;
     color: #000000;
     margin: 0;
@@ -29,25 +29,20 @@ body {
     margin-bottom: 0px;
 }
 
-.header-gif {
-    transform: scale(0.4);
-}
-
 .header-text {
-    font-family: 'Quicksand', sans-serif;
+    font-family: 'Nunito', sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #000000;
 }
 
-.tweet-title {
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 1;
+.subheader-text {
+    text-align: center;
+    margin: 5px 0;
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: 12px;
     color: #000000;
-    margin-bottom: 5px;
-    margin-top: 10px;
 }
 
 .current-date {
@@ -62,7 +57,18 @@ body {
 }
 
 .tweet:last-child {
+    padding-bottom: 200px;
     border-bottom: none;
+}
+
+.tweet-title {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1;
+    color: #000000;
+    margin-bottom: 5px;
+    margin-top: 10px;
 }
 
 .user-icon {
@@ -74,7 +80,7 @@ body {
     border-radius: 8px;
     background-color: #1FB36E;
     color: #ffffff;
-    font-weight: 400;
+    font-weight: 500;
     margin-right: 10px;
     font-size: 14px;
 }
@@ -89,11 +95,37 @@ body {
 
 .arxiv-id {
     display: block;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 300;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
     font-size: 14px;
     color: #000000;
     margin-bottom: 5px
+}
+
+.institute-line {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.institute-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.primary-text {
+    line-height: 1.2;
+    font-weight: 500;
+    font-size: 14px;
+    color: #000000;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: poNunito;
 }
 
 #playPauseButton {
@@ -109,55 +141,19 @@ body {
     /* Black border as specified */
     border-radius: 10px;
     /* Rounded corners for the rectangle */
-    cursor: pointer;
+    cursor: poNunito;
     padding: 5px 10px;
-    width: 60px;
     margin-left: 10px;
     /* Set width and height to the same size for a square */
-    height: 60px;
+    height: 55px;
+    width: 55px;
     /* Padding inside the button */
 }
 
 #playPauseImage {
-    width: 15px;
+    width: 12px;
     height: auto;
     margin-bottom: 2px;
-}
-
-.tweet-institute {
-    display: flex;
-    align-items: flex-start;
-    /* Align items at the top */
-    margin-bottom: 5px;
-}
-
-.institute-icon {
-    width: 16px;
-    height: 16px;
-    margin-right: 5px;
-    margin-top: 5px;
-}
-
-.institute-name {
-    font-size: 14px;
-    color: #000000;
-    margin-bottom: 0px;
-    line-height: 1.2;
-    margin-top: 5px;
-}
-
-.tweet-text {
-    margin: 5px 0;
-    line-height: 1.2;
-    font-weight: 400;
-    font-size: 14px;
-    color: #000000;
-}
-
-button {
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
 }
 
 .player-footer {
@@ -166,7 +162,7 @@ button {
     left: 0;
     right: 0;
     /* Ensures the footer spans the entire width of the viewport */
-    height: 70px;
+    height: 50px;
     background-color: #f8f8f8;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
     display: flex;
@@ -197,7 +193,7 @@ button {
     background-color: #000;
     position: relative;
     user-select: none;
-    cursor: pointer;
+    cursor: poNunito;
     margin-right: 20px;
 }
 
@@ -216,14 +212,14 @@ button {
     position: absolute;
     top: -4px;
     left: 0;
-    cursor: pointer;
+    cursor: poNunito;
     user-select: none;
 }
 
 #progressTime {
     font-size: 14px;
-    font-family: 'Quicksand', sans-serif;
-    font-weight: 400;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 600;
     font-size: 14px;
 }
 
