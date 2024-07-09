@@ -1,5 +1,5 @@
 body {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     background-color: #ffffff;
     color: #000000;
     margin: 0;
@@ -25,18 +25,19 @@ body {
 }
 
 .header-text {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #000000;
 }
 
 .tweet-title {
-    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 700;
     font-size: 16px;
+    line-height: 1;
     color: #000000;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
     margin-top: 10px;
 }
 
@@ -48,7 +49,7 @@ body {
 .tweet {
     display: flex;
     padding: 15px;
-    border-bottom: 1.8px solid #000000;
+    border-bottom: 0.5px solid #000000;
 }
 
 .tweet:last-child {
@@ -74,12 +75,12 @@ body {
 }
 
 .tweet-header {
-    margin-bottom: 5px;
+    margin-bottom: 3px;
 }
 
 .arxiv-id {
     display: block;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Quicksand', sans-serif;
     font-weight: 300;
     font-size: 14px;
     color: #000000;
@@ -103,13 +104,14 @@ body {
 .institute-name {
     font-size: 14px;
     color: #000000;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
+    line-height: 1.2;
     margin-top: 5px;
 }
 
 .tweet-text {
     margin: 5px 0;
-    line-height: 1.5;
+    line-height: 1.2;
     font-weight: 400;
     font-size: 14px;
     color: #000000;
