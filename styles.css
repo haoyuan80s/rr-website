@@ -8,7 +8,7 @@ body {
 }
 
 body {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     background-color: #ffffff;
     color: #000000;
     margin: 0;
@@ -30,7 +30,7 @@ body {
 }
 
 .header-text {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #000000;
@@ -40,7 +40,7 @@ body {
     text-align: center;
     margin: 5px 0;
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 12px;
     color: #000000;
 }
@@ -62,7 +62,7 @@ body {
 }
 
 .tweet-title {
-    font-family: 'Nunito', sans-serif;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1;
@@ -95,8 +95,8 @@ body {
 
 .arxiv-id {
     display: block;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 400;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 300;
     font-size: 14px;
     color: #000000;
     margin-bottom: 5px
@@ -117,15 +117,14 @@ body {
 
 .primary-text {
     line-height: 1.2;
-    font-weight: 500;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 15px;
     color: #000000;
 }
 
 button {
     padding: 10px 20px;
     font-size: 16px;
-    cursor: poNunito;
 }
 
 #playPauseButton {
@@ -141,7 +140,7 @@ button {
     /* Black border as specified */
     border-radius: 10px;
     /* Rounded corners for the rectangle */
-    cursor: poNunito;
+    cursor: pointer;
     padding: 5px 10px;
     margin-left: 10px;
     /* Set width and height to the same size for a square */
@@ -193,7 +192,7 @@ button {
     background-color: #000;
     position: relative;
     user-select: none;
-    cursor: poNunito;
+    cursor: pointer;
     margin-right: 20px;
 }
 
@@ -212,14 +211,14 @@ button {
     position: absolute;
     top: -4px;
     left: 0;
-    cursor: poNunito;
+    cursor: pointer;
     user-select: none;
 }
 
 #progressTime {
     font-size: 14px;
-    font-family: 'Nunito', sans-serif;
-    font-weight: 600;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-weight: 500;
     font-size: 14px;
 }
 
