@@ -8,7 +8,7 @@ body {
 }
 
 body {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Roboto', sans-serif;
     background-color: #ffffff;
     color: #000000;
     margin: 0;
@@ -29,8 +29,17 @@ body {
     margin-bottom: 0px;
 }
 
+.notification-text {
+    font-family: 'Amatic SC', cursive;
+    font-weight: 700;
+    font-size: 24px;
+    color: #000000;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
 .header-text {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     color: #000000;
@@ -62,7 +71,7 @@ body {
 }
 
 .tweet-title {
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1;
@@ -95,7 +104,7 @@ body {
 
 .arxiv-id {
     display: block;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 14px;
     color: #000000;
@@ -118,6 +127,13 @@ body {
 .primary-text {
     line-height: 1.2;
     font-weight: 400;
+    font-size: 15px;
+    color: #000000;
+}
+
+.institute-text {
+    line-height: 1.2;
+    font-weight: 300;
     font-size: 15px;
     color: #000000;
 }
@@ -217,7 +233,7 @@ button {
 
 #progressTime {
     font-size: 14px;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 14px;
 }
@@ -233,7 +249,7 @@ button {
     }
 
     .user-icon {
-        width: 40px;
+        width: 43px;
         height: 20px;
         font-size: 14px;
     }
