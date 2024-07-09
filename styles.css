@@ -1,34 +1,132 @@
-body, html {
-    height: 100%; /* Ensure the full height for vertical centering */
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: #ffffff;
+    color: #000000;
     margin: 0;
+    padding: 0;
     display: flex;
     justify-content: center;
-    align-items: center;
-    font-family: 'M PLUS Rounded 1c', sans-serif;
 }
 
 .container {
-    text-align: center; /* Center text and any inline elements like images */
+    width: 100%;
+    max-width: 600px;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
-h2 {
-    font-size: 48px; /* Larger font size for the announcement */
-    font-weight: 700; /* Bold font weight */
-    color: black;
-    margin: 2px 0; /* Adds space around the h2 for better visual separation */
+.header {
+    text-align: center;
+    margin-bottom: 0px;
 }
 
-.container p {
-    font-size: 20px;
-    color: black;
-    margin: 10px 0;
+.header-gif {
+    transform: scale(0.4);
 }
 
-a {
-    color: #007BFF;
-    text-decoration: none;
+.header-text {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
 }
 
-a:hover {
-    text-decoration: underline;
+.tweet-title {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    color: #000000;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.current-date {
+    font-size: 1.2em;
+    color: #555555;
+}
+
+.tweet {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1.8px solid #000000;
+}
+
+.tweet:last-child {
+    border-bottom: none;
+}
+
+.user-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 48px;
+    height: 24px;
+    border-radius: 8px;
+    background-color: #1FB36E;
+    color: #ffffff;
+    font-weight: 400;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.tweet-content {
+    flex: 1;
+}
+
+.tweet-header {
+    margin-bottom: 5px;
+}
+
+.arxiv-id {
+    display: block;
+    font-family: 'Inter', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 5px
+}
+
+.tweet-institute {
+    display: flex;
+    align-items: flex-start;
+    /* Align items at the top */
+    margin-bottom: 5px;
+}
+
+.institute-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.institute-name {
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+.tweet-text {
+    margin: 5px 0;
+    line-height: 1.5;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+
+@media (max-width: 600px) {
+    .container {
+        padding: 10px;
+    }
+
+    .tweet {
+        padding: 10px;
+    }
+
+    .user-icon {
+        width: 40px;
+        height: 20px;
+        font-size: 14px;
+    }
 }
