@@ -80,7 +80,7 @@ body {
     margin-top: 10px;
 }
 
-.user-icon {
+.start-time-icon {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -143,7 +143,7 @@ button {
     font-size: 16px;
 }
 
-#playPauseButton {
+#controllerButton {
     display: flex;
     flex-direction: column;
     /* Align children vertically */
@@ -158,7 +158,7 @@ button {
     /* Rounded corners for the rectangle */
     cursor: pointer;
     padding: 5px 10px;
-    margin-left: 10px;
+    margin-left: 5px;
     /* Set width and height to the same size for a square */
     height: 55px;
     width: 55px;
@@ -169,6 +169,11 @@ button {
     width: 12px;
     height: auto;
     margin-bottom: 2px;
+}
+
+#locateImage {
+    width: 18px;
+    height: auto;
 }
 
 .player-footer {
@@ -196,7 +201,7 @@ button {
 
 #controls {
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
     align-items: center;
     margin-right: 20px;
 }
@@ -248,7 +253,7 @@ button {
         padding: 10px;
     }
 
-    .user-icon {
+    .start-time-icon {
         width: 43px;
         height: 20px;
         font-size: 14px;
