@@ -143,6 +143,25 @@ button {
     font-size: 16px;
 }
 
+#privacyButton {
+    display: flex;
+    /* Align children vertically */
+    align-items: center;
+    /* Center-align children horizontally */
+    justify-content: center;
+    /* Center-align children vertically */
+    background: none;
+    border: none;
+    /* Black border as specified */
+    cursor: pointer;
+    padding: 5px 10px;
+    /* Set width and height to the same size for a square */
+    /* height: 55px;
+    width: 55px; */
+    /* Padding inside the button */
+    padding-bottom: 200px;
+}
+
 #controllerButton {
     display: flex;
     flex-direction: column;
