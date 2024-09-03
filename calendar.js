@@ -1,7 +1,5 @@
-const dateElement = document.getElementById("data-default-date");
-const defaultDate = dateElement.getAttribute("data-date");
-console.log("NOODLE0", dateElement);
-console.log("NOODLE", defaultDate);
+// Set up the date-dependent calendar.
+const defaultDate = document.getElementById("data-default-date").getAttribute("data-date");
 
 flatpickr("#selectedDate", {
     minDate: new Date("2024-07-10T00:00:00"),
@@ -17,3 +15,7 @@ flatpickr("#selectedDate", {
         window.location.href = `https://ribbitribbit.co/index_${formattedDate}.html`;
     }
 });
+
+// Set up the date-dependent audio path.
+var audioPlayer = document.getElementById('audioPlayer');
+audioPlayer.src = "https://d2irtorupa9e8g.cloudfront.net/daily_podcast/202408190726_audio.mp3";
