@@ -16,74 +16,7 @@
 </head>
 
 <body>
-    <div class="header">
-        <a style="display: flex; align-items: flex-end;  margin-top: 3px; margin-bottom: 3px;"
-            href="https://ribbitribbit.co">
-            <img src="assets/AppLaunchFrog.gif" alt="icon"
-                style="width: 45px; height: auto; margin-left: 20px; margin-right: 5px;">
-            <div style="display: flex; flex-direction: column;">
-                <img src="assets/AppLaunchText1.gif" alt="icon text"
-                    style="width: 55px; height: auto; margin-left: 0px;">
-                <img src="assets/AppLaunchText2.gif" alt="icon text"
-                    style="width: 55px; height: auto; margin-left: 8px;">
-            </div>
-        </a>
-        <div class="header-title"></div>
-        <div id="externalLinkButtons" style="padding: 0 0; margin: 0;">
-            <a title="Join us on Discord" class="externalLinkButton"
-                href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
-                style="text-decoration: none;">
-                <img src="assets/iconDiscord.svg" style="width: 24px;">
-            </a>
-            <a title="Install app" class="externalLinkButton"
-                href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
-                style="text-decoration: none;">
-                <img src="assets/iconAppStore.svg" style="width: 24px;">
-            </a>
-            <a title="Listen on Spotify" class="externalLinkButton"
-                href="https://open.spotify.com/show/0YhT3crdRlM0s7bUskVPBK" target="_blank"
-                style="text-decoration: none;">
-                <img src="assets/iconSpotify.svg" style="width: 25px;">
-            </a>
-            <a title="Listen on Apple Podcasts" class="externalLinkButton"
-                href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
-                style="text-decoration: none;">
-                <img src="assets/iconApplePodcast.svg" style="width: 24px;">
-            </a>
-        </div>
-        <div class="dropdown">
-            <button onclick="ToggleDropDown()" class="dropbtn" title="Menu"
-                style="padding-right: 20px; padding-left: 6px;">
-                <img src="assets/buttonSetting.svg" id="menuButtonId" style="height: 20px;">
-            </button>
-            <div id="myDropdown" class="dropdown-content">
-                <div class="externalLinkMenuItemMandatory">
-                    <img src="assets/iconPrivacy.svg" style="width: 15px; padding-left: 10px;">
-                    <a href="#" onclick="openPopup('privacyModal')">Privacy</a>
-                </div>
-                <div class="externalLinkMenuItem">
-                    <img src="assets/iconDiscord.svg" style="width: 15px; padding-left: 10px;">
-                    <a href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
-                        style="text-decoration: none;">Join us on Discord</a>
-                </div>
-                <div class="externalLinkMenuItem">
-                    <img src="assets/iconAppStore.svg" style="width: 15px; padding-left: 10px;">
-                    <a href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
-                        style="text-decoration: none;">Install app</a>
-                </div>
-                <div class="externalLinkMenuItem">
-                    <img src="assets/iconSpotify.svg" style="width: 15px; padding-left: 10px;">
-                    <a href="https://open.spotify.com/show/0YhT3crdRlM0s7bUskVPBK" target="_blank"
-                        style="text-decoration: none;">Listen on Spotify</a>
-                </div>
-                <div class="externalLinkMenuItem">
-                    <img src="assets/iconApplePodcast.svg" style="width: 15px; padding-left: 10px;">
-                    <a href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
-                        style="text-decoration: none;">Listen on Apple Podcasts</a>
-                </div>
-            </div>
-        </div>
-    </div>
+    <div id="headerId" class="header"></div>
     <div class="container">
         <div id="topblock">
             <div style="height: 80px;"></div>
@@ -1159,12 +1092,18 @@
     <script src="script.js"></script>
     <script src="calendar.js"></script>    
     <script>
+        fetch('https://ribbitribbit.co/header.html')
+            .then(response => response.text()) // Convert the response to text
+            .then(data => {
+                document.getElementById('headerId').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header.html:', error));
         fetch('https://ribbitribbit.co/privacy.html')
             .then(response => response.text()) // Convert the response to text
             .then(data => {
                 document.getElementById('privacyModal').innerHTML = data;
             })
-            .catch(error => console.error('Error loading privacy:', error));
+            .catch(error => console.error('Error loading privacy.html:', error));
     </script>
 </body>
 </html>
