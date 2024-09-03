@@ -15,7 +15,3 @@ flatpickr("#selectedDate", {
         window.location.href = `https://ribbitribbit.co/index_${formattedDate}.html`;
     }
 });
-
-// Set up the date-dependent audio path.
-var audioPlayer = document.getElementById('audioPlayer');
-audioPlayer.src = "https://d2irtorupa9e8g.cloudfront.net/daily_podcast/202408190726_audio.mp3";
