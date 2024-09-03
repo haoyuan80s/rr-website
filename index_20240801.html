@@ -1,0 +1,2346 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ribbit Ribbit - Fresh AI Paper Top Picks</title>
+    <meta name="description"
+        content="Discover top ArXiv papers in AI and machine learning daily with our fresh picks. Browse easily through tweet-sized summaries or listen on-the-go. Make learning engaging and accessible anytime, anywhere.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dosis:wght@200..800&family=Roboto:wght@300..700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body>
+    <div class="header">
+        <a style="display: flex; align-items: flex-end;  margin-top: 3px; margin-bottom: 3px;"
+            href="https://ribbitribbit.co">
+            <img src="assets/AppLaunchFrog.gif" alt="icon"
+                style="width: 45px; height: auto; margin-left: 20px; margin-right: 5px;">
+            <div style="display: flex; flex-direction: column;">
+                <img src="assets/AppLaunchText1.gif" alt="icon text"
+                    style="width: 55px; height: auto; margin-left: 0px;">
+                <img src="assets/AppLaunchText2.gif" alt="icon text"
+                    style="width: 55px; height: auto; margin-left: 8px;">
+            </div>
+        </a>
+        <div class="header-title"></div>
+        <div id="externalLinkButtons" style="padding: 0 0; margin: 0;">
+            <a title="Join us on Discord" class="externalLinkButton"
+                href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
+                style="text-decoration: none;">
+                <img src="assets/iconDiscord.svg" style="width: 24px;">
+            </a>
+            <a title="Install app" class="externalLinkButton"
+                href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
+                style="text-decoration: none;">
+                <img src="assets/iconAppStore.svg" style="width: 24px;">
+            </a>
+            <a title="Listen on Spotify" class="externalLinkButton"
+                href="https://open.spotify.com/show/0YhT3crdRlM0s7bUskVPBK" target="_blank"
+                style="text-decoration: none;">
+                <img src="assets/iconSpotify.svg" style="width: 25px;">
+            </a>
+            <a title="Listen on Apple Podcasts" class="externalLinkButton"
+                href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
+                style="text-decoration: none;">
+                <img src="assets/iconApplePodcast.svg" style="width: 24px;">
+            </a>
+        </div>
+        <div class="dropdown">
+            <button onclick="ToggleDropDown()" class="dropbtn" title="Menu"
+                style="padding-right: 20px; padding-left: 6px;">
+                <img src="assets/buttonSetting.svg" id="menuButtonId" style="height: 20px;">
+            </button>
+            <div id="myDropdown" class="dropdown-content">
+                <div class="externalLinkMenuItemMandatory">
+                    <img src="assets/iconPrivacy.svg" style="width: 15px; padding-left: 10px;">
+                    <a href="#" onclick="openPopup('privacyModal')">Privacy</a>
+                </div>
+                <div class="externalLinkMenuItem">
+                    <img src="assets/iconDiscord.svg" style="width: 15px; padding-left: 10px;">
+                    <a href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
+                        style="text-decoration: none;">Join us on Discord</a>
+                </div>
+                <div class="externalLinkMenuItem">
+                    <img src="assets/iconAppStore.svg" style="width: 15px; padding-left: 10px;">
+                    <a href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
+                        style="text-decoration: none;">Install app</a>
+                </div>
+                <div class="externalLinkMenuItem">
+                    <img src="assets/iconSpotify.svg" style="width: 15px; padding-left: 10px;">
+                    <a href="https://open.spotify.com/show/0YhT3crdRlM0s7bUskVPBK" target="_blank"
+                        style="text-decoration: none;">Listen on Spotify</a>
+                </div>
+                <div class="externalLinkMenuItem">
+                    <img src="assets/iconApplePodcast.svg" style="width: 15px; padding-left: 10px;">
+                    <a href="https://podcasts.apple.com/us/podcast/ribbit-ribbit/id1756448619" target="_blank"
+                        style="text-decoration: none;">Listen on Apple Podcasts</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div id="topblock">
+            <div style="height: 80px;"></div>
+            <div class="institute-text" style="padding-top: 3px; line-height: 1.2;">
+                Freshest
+                Top Picks:
+                <span class="highlightNumber" style="font-size: 28px;">90</span> out of <span
+                    class="highlightNumber">503</span> arXiv AI
+                papers
+            </div>
+            <div style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
+                <div class="institute-text" style="line-height: 1.2;">just released on</div>
+                <div id="data-default-date" data-date="2024-08-01"></div>
+                <input type="text" id="selectedDate" style="text-decoration: underline;" />
+            </div>
+            <div style=" height: 10px;">
+            </div>
+        </div>
+
+<div class="tweet" id="tweet0">
+ <div class="start-time-icon" title="Play from here">
+  00:50
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21417" target="_blank">
+    @arXiv 2407.21417
+   </a>
+   <span class="tweet-title">
+    Language Models: Dancing in Chains of Instruction and Faithfulness
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Stanford University, Amazon
+   </span>
+  </div>
+  <div class="primary-text">
+   This research investigates the trade-off between instruction following and faithfulness in language models (LLMs) when trained on different datasets. The authors propose a novel method called RESET (Rejection Sampling for Continued Self-instruction Tuning) that aims to reconcile these two objectives. Unlike previous multi-task learning (MTL) approaches, RESET leverages a reject-sampling strategy based on self-instruction, which involves sampling generations from the model and then using external judges to rate their quality.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet1">
+ <div class="start-time-icon" title="Play from here">
+  01:27
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21792" target="_blank">
+    @arXiv 2407.21792
+   </a>
+   <span class="tweet-title">
+    AI Safety Benchmarks:  Are We Just Measuring Smarts, Not Safety?
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Center for AI Safety, University of Pennsylvania, UC Berkeley...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research goes beyond intuitive arguments and uses empirical analysis to determine whether AI safety benchmarks are actually measuring distinct safety properties or simply reflecting general model capabilities.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet2">
+ <div class="start-time-icon" title="Play from here">
+  01:57
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21130" target="_blank">
+    @arXiv 2407.21130
+   </a>
+   <span class="tweet-title">
+    Bach Bot: Can a Computer Really Understand Harmony?
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Princeton University, University of Michigan, Santa Fe Institute
+   </span>
+  </div>
+  <div class="primary-text">
+   This research uses hidden Markov models to automatically annotate Bach chorales, achieving an accuracy of 85% or greater in identifying chords and keys, without relying on human input. This differs from previous work that often used hand-tuned parameters based on expert knowledge.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet3">
+ <div class="start-time-icon" title="Play from here">
+  02:16
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21170" target="_blank">
+    @arXiv 2407.21170
+   </a>
+   <span class="tweet-title">
+    AI Tutor: Decomposed Prompting for Smarter Course Q&amp;A
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Toronto
+   </span>
+  </div>
+  <div class="primary-text">
+   This research proposes a question-answering system that uses decomposed prompting to classify and answer student questions on a course discussion board. Unlike previous work, this system leverages a large language model (LLM) to categorize questions into four types, allowing for tailored responses.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet4">
+ <div class="start-time-icon" title="Play from here">
+  02:38
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20471" target="_blank">
+    @arXiv 2407.20471
+   </a>
+   <span class="tweet-title">
+    Symmetry Breaking: When Neural Networks Get a Little Wild!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    MIT
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper introduces a new type of graph neural network that can learn and represent symmetry breaking within continuous groups. It builds on the existing E(3)NN framework by introducing relaxed weights, which allow for controlled symmetry breaking.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet5">
+ <div class="start-time-icon" title="Play from here">
+  03:13
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20292" target="_blank">
+    @arXiv 2407.20292
+   </a>
+   <span class="tweet-title">
+    Generative Models Get a Makeover: Renormalization Group to the Rescue!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University College London, Dresden University of Technology, University of Oxford
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper introduces a new approach to generative modeling using the renormalization group (RG) to create scale-free models. Unlike previous work, it focuses on discrete state-space models, which are more efficient and easier to learn.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet6">
+ <div class="start-time-icon" title="Play from here">
+  03:32
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20722" target="_blank">
+    @arXiv 2407.20722
+   </a>
+   <span class="tweet-title">
+    SMC Gets a Memory Boost: Persistent Sampling for Bayesian Inference
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    UC Berkeley
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper introduces persistent sampling (PS), an extension of sequential Monte Carlo (SMC) that retains particles from previous iterations, creating a growing, weighted ensemble. This allows for more accurate posterior approximations and lower-variance marginal likelihood estimates.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet7">
+ <div class="start-time-icon" title="Play from here">
+  03:59
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20336" target="_blank">
+    @arXiv 2407.20336
+   </a>
+   <span class="tweet-title">
+    Sun Off, Lights On:  Turning Daytime Scenes Into Nighttime Dreams!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    ETH Zurich, University of Toronto, KU Leuven...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a novel physically-based method for simulating photorealistic nighttime images from daytime counterparts. Unlike previous data-driven approaches, this method explicitly models the 3D geometry, materials, and light sources of the scene, enabling more accurate and realistic nighttime simulations.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet8">
+ <div class="start-time-icon" title="Play from here">
+  04:25
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20311" target="_blank">
+    @arXiv 2407.20311
+   </a>
+   <span class="tweet-title">
+    Language Models:  Not Just Memorizing, They're Actually Thinking!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    CMU, Meta, Mohamed bin Zayed University of Artificial Intelligence
+   </span>
+  </div>
+  <div class="primary-text">
+   This research focuses on understanding how language models solve grade-school math problems by training them from scratch on a synthetic dataset. This approach allows the researchers to control the data and eliminate potential contamination from pre-trained models.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet9">
+ <div class="start-time-icon" title="Play from here">
+  04:57
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20371" target="_blank">
+    @arXiv 2407.20371
+   </a>
+   <span class="tweet-title">
+    AI Hiring Tools:  Are They Biased Against Black Men?
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Washington
+   </span>
+  </div>
+  <div class="primary-text">
+   This research investigates the biases of Massive Text Embedding (MTE) models, a specific type of large language model (LLM), when used for resume screening. Unlike previous work that focused on general LLMs or AI hiring tools, this study specifically examines MTEs and their potential for discrimination.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet10">
+ <div class="start-time-icon" title="Play from here">
+  05:16
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20351" target="_blank">
+    @arXiv 2407.20351
+   </a>
+   <span class="tweet-title">
+    LiteEFG:  Solving Games Faster Than You Can Say "Checkmate!"
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    MIT
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces LiteEFG, a Python library for solving extensive-form games (EFGs) that leverages a C++ backend for significant speedups compared to pure Python implementations. Unlike existing libraries, LiteEFG automatically handles the complex structure of imperfect-information games, simplifying the implementation process for researchers.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet11">
+ <div class="start-time-icon" title="Play from here">
+  05:36
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20243" target="_blank">
+    @arXiv 2407.20243
+   </a>
+   <span class="tweet-title">
+    Shrinking Embeddings:  How to Make LLMs More Efficient Without Sacrificing Performance
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Google
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces Matryoshka-Adaptor, a novel tuning framework that customizes embeddings from Large Language Models (LLMs) to achieve substantial dimensionality reduction without compromising performance. Unlike previous work that focuses on Matryoshka properties during pre-training, this approach tunes embeddings after they are extracted from pre-trained LLMs.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet12">
+ <div class="start-time-icon" title="Play from here">
+  05:54
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21686" target="_blank">
+    @arXiv 2407.21686
+   </a>
+   <span class="tweet-title">
+    From Short Videos to Expressive Avatars:  A 3D Gaussian Trick
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Daegu Gyeongbuk Institute of Science and Technology, Meta
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces ExAvatar, a 3D human avatar model that can be created from a short monocular video. Unlike previous methods that require 3D scans or RGBD images, ExAvatar utilizes a hybrid representation of surface meshes and 3D Gaussians to achieve expressive whole-body animation with novel facial expressions and poses.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet13">
+ <div class="start-time-icon" title="Play from here">
+  06:20
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21772" target="_blank">
+    @arXiv 2407.21772
+   </a>
+   <span class="tweet-title">
+    ShieldGemma:  AI's New Safety Net for Toxic Content
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Google
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces ShieldGemma, a suite of content moderation models built on Gemma 2, which are designed to identify and filter harmful content in both user input and LLM-generated output.  The study distinguishes itself by focusing on harm-type level prediction, rather than just binary safe/unsafe classification, and by utilizing a novel synthetic data generation pipeline to reduce human annotation effort.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet14">
+ <div class="start-time-icon" title="Play from here">
+  06:41
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21530" target="_blank">
+    @arXiv 2407.21530
+   </a>
+   <span class="tweet-title">
+    Data Contamination:  The Dirty Little Secret of AI Models
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of the Basque Country UPV/EHU, Bar Ilan University, Cohere...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research compiles a database of documented cases of data contamination in NLP models, providing a structured and centralized resource for the community. It differs from previous work by focusing on collecting and analyzing real-world evidence of contamination, rather than just theoretical discussions.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet15">
+ <div class="start-time-icon" title="Play from here">
+  07:04
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21077" target="_blank">
+    @arXiv 2407.21077
+   </a>
+   <span class="tweet-title">
+    Coding LLMs:  Evolving Instructions for Better Code!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Nvidia
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces Genetic-Instruct, a method for generating synthetic coding instructions for LLMs. Unlike previous methods that focus on either mutation or crossover, Genetic-Instruct combines both operations in a scalable pipeline.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet16">
+ <div class="start-time-icon" title="Play from here">
+  07:42
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21787" target="_blank">
+    @arXiv 2407.21787
+   </a>
+   <span class="tweet-title">
+    LLMs:  More Attempts, More Success!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Oxford, Stanford University, Google
+   </span>
+  </div>
+  <div class="primary-text">
+   This research explores the impact of increasing the number of attempts (samples) during inference, rather than focusing solely on model size or training data. It investigates how this approach affects the coverage of problems solved, particularly in domains like coding and formal proofs where solutions can be automatically verified.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet17">
+ <div class="start-time-icon" title="Play from here">
+  08:17
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21687" target="_blank">
+    @arXiv 2407.21687
+   </a>
+   <span class="tweet-title">
+    Forgetful AI? Not This Time! Dynamic Queries Give Object Detection a Memory Boost.
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Tsinghua University, Chinese Academy of Sciences
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper introduces dynamic object queries for incremental object detection, a technique that expands the model's capacity to learn new classes without forgetting old ones. Unlike previous methods that rely on knowledge distillation or exemplar replay, this approach dynamically adds new queries to the model, allowing it to adapt to evolving data streams.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet18">
+ <div class="start-time-icon" title="Play from here">
+  08:41
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20254" target="_blank">
+    @arXiv 2407.20254
+   </a>
+   <span class="tweet-title">
+    EEG Mamba Strikes: A Multi-Task Brainwave Classifier That's Both Smart and Speedy!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Peking University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces EEGMamba, a novel EEG classification network that integrates Spatio-Temporal-Adaptive (ST-Adaptive) modules, Bidirectional Mamba, and Mixture of Experts (MoE) into a unified framework for multiple tasks. Unlike previous models that focus on single tasks, EEGMamba can handle EEG data from various tasks simultaneously, adapting to different signal lengths and channel counts.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet19">
+ <div class="start-time-icon" title="Play from here">
+  09:13
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20584" target="_blank">
+    @arXiv 2407.20584
+   </a>
+   <span class="tweet-title">
+    Pruning LLMs:  A New Trick to Make Big Models Tiny and Smart!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Tsinghua University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research proposes a novel training pipeline called Adaptive Sparse Trainer (AST) for semi-structured sparse models. Unlike previous methods that prune models after training, AST retrains dense pretrained LLMs into sparse ones, allowing the model to adaptively select better sparsity patterns during training.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet20">
+ <div class="start-time-icon" title="Play from here">
+  09:38
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21236" target="_blank">
+    @arXiv 2407.21236
+   </a>
+   <span class="tweet-title">
+    GNUMAP:  Unsupervised Learning Gets a Graph-ical Makeover!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Chicago
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces GNUMAP, a parameter-free approach to unsupervised dimensionality reduction that combines the UMAP framework with graph neural networks (GNNs). Unlike previous GNN-based methods that rely heavily on hyperparameter tuning, GNUMAP offers a more robust and reliable solution for real-world applications.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet21">
+ <div class="start-time-icon" title="Play from here">
+  10:05
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21009" target="_blank">
+    @arXiv 2407.21009
+   </a>
+   <span class="tweet-title">
+    AI Makes Math Questions So Hard, Even AI Can't Solve Them!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Mila – Quebec AI Institute, Université de Montréal, Princeton University...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research proposes a novel framework for generating challenging math questions by combining the strengths of LLMs with human expertise. Unlike previous work that relies solely on LLMs or human experts, this approach leverages the metacognitive abilities of LLMs to extract core skills from existing datasets and then uses these skills to generate questions that require the application of multiple skills.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet22">
+ <div class="start-time-icon" title="Play from here">
+  10:30
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20253" target="_blank">
+    @arXiv 2407.20253
+   </a>
+   <span class="tweet-title">
+    EEG Data Augmentation:  A Diffusion Model's  Random Reassembly Trick!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Peking University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research proposes a new data augmentation method for EEG classification networks that randomly reassembles original and generated EEG data to create "vicinal" data. This differs from previous methods that directly incorporated generated data into the training set, which often led to unstable performance.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet23">
+ <div class="start-time-icon" title="Play from here">
+  10:54
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20756" target="_blank">
+    @arXiv 2407.20756
+   </a>
+   <span class="tweet-title">
+    Vision Models Get a Synthetic Makeover: 100k Fake Images, Real Results!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Peking University
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper introduces SynthVLM, a novel data synthesis pipeline for Vision Language Models (VLLMs). Unlike existing methods that generate captions from images, SynthVLM uses advanced diffusion models to generate images from captions, creating precisely aligned image-text pairs.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet24">
+ <div class="start-time-icon" title="Play from here">
+  11:17
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21011" target="_blank">
+    @arXiv 2407.21011
+   </a>
+   <span class="tweet-title">
+    Crafty CLEFT:  A Language Model That's Smart, But Not Too Big for Medical Images
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Yale University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces CLEFT, a new method for contrastive language-image pre-training that uses a large language model (LLM) but focuses on fine-tuning only a small portion of the model's parameters. This approach aims to improve performance while reducing the computational resources needed for training, making it more suitable for medical applications where data is often limited.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet25">
+ <div class="start-time-icon" title="Play from here">
+  11:41
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20508" target="_blank">
+    @arXiv 2407.20508
+   </a>
+   <span class="tweet-title">
+    Spiking Neurons Go Graphing: A New Way to Learn from Networks
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Guangdong Institute of Intelligence Science and Technology, Tsinghua University, Hong Kong Polytechnic University...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a novel framework for integrating spiking neural networks (SNNs) with graph representation learning, addressing the limitations of previous work in handling non-Euclidean data and exploring the impact of spiking dynamics on graph learning. The paper proposes a spatial-temporal feature normalization (STFN) technique to enhance training efficiency and model stability, offering a comprehensive spike-based modeling framework for graph tasks.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet26">
+ <div class="start-time-icon" title="Play from here">
+  12:16
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21034" target="_blank">
+    @arXiv 2407.21034
+   </a>
+   <span class="tweet-title">
+    Recommender Systems: Watermarked and Ready to Rumble!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Nanyang Technological University, University of Queensland
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper introduces a novel watermarking technique called Autoregressive Out-of-distribution Watermarking (AOW) specifically designed for recommender systems. Unlike previous methods that focus on computer vision or classification tasks, AOW leverages the sequential nature of recommendations to embed a watermark sequence into the model's memory.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet27">
+ <div class="start-time-icon" title="Play from here">
+  12:40
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21507" target="_blank">
+    @arXiv 2407.21507
+   </a>
+   <span class="tweet-title">
+    Swin Transformer:  Image Communication Gets a Semantic Makeover!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Northwestern Polytechnical University, Samsung AI Center, Xidian University...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research proposes a federated learning (FL) strategy for a Swin Transformer-based semantic communication system (FSSC). Unlike previous work, which often relies on centralized approaches, FSSC leverages a multi-user FL framework to train a global model without directly accessing users' private data.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet28">
+ <div class="start-time-icon" title="Play from here">
+  13:13
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21057" target="_blank">
+    @arXiv 2407.21057
+   </a>
+   <span class="tweet-title">
+    LLMs Can't Tell Us Everything:  New Research Makes Them More Honest About What They Don't Know!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    CMU
+   </span>
+  </div>
+  <div class="primary-text">
+   This research focuses on quantifying uncertainty in long-form text generation from LLMs, specifically by ensuring that uncertainty guarantees are valid not only across the entire dataset but also within identifiable subgroups of prompts. This differs from previous work that primarily focused on marginal uncertainty guarantees.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet29">
+ <div class="start-time-icon" title="Play from here">
+  13:41
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21402" target="_blank">
+    @arXiv 2407.21402
+   </a>
+   <span class="tweet-title">
+    Heart Rate from Your Face?  New AI Can Filter Out the Noise!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    National Tsing Hua University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research proposes a new method for unsupervised rPPG estimation that focuses on identifying and removing interference from facial videos. Unlike previous methods that rely on assumptions about rPPG signals, this approach directly models interference features and uses them to derive de-interfered rPPG signals.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet30">
+ <div class="start-time-icon" title="Play from here">
+  14:12
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20273" target="_blank">
+    @arXiv 2407.20273
+   </a>
+   <span class="tweet-title">
+    Learning Material Behavior Without a Physics Textbook: AI Cracks the Code of Elasticity
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    ETH Zurich
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a new machine learning approach called uLED, which learns the constitutive relations of hyperelastic materials solely from displacement data. Unlike previous methods, uLED does not require stress data or information about boundary forces, making it particularly suitable for in-situ applications.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet31">
+ <div class="start-time-icon" title="Play from here">
+  14:38
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21126" target="_blank">
+    @arXiv 2407.21126
+   </a>
+   <span class="tweet-title">
+    Predicting the Future: How AI Sees the Road Ahead, One Grid Cell at a Time
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Stanford University, UC Riverside
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a new framework for predicting the future occupancy of a scene using LiDAR data. Unlike previous methods that focus on deterministic predictions within the grid cell space, this approach leverages the latent space of a generative model to capture the stochastic nature of the environment.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet32">
+ <div class="start-time-icon" title="Play from here">
+  15:12
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20399" target="_blank">
+    @arXiv 2407.20399
+   </a>
+   <span class="tweet-title">
+    LiDAR's New Trick:  Seeing in the Dark with a Neighborhood Watch!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    UC Berkeley, Purdue University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research delves into the theoretical limitations of the rank-ordered mean (ROM) filter, a common technique for removing noise in single-photon LiDAR systems. It then proposes a new method, the neighborhood consensus filter, which leverages the temporal closeness of signal timestamps to improve depth estimation accuracy.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet33">
+ <div class="start-time-icon" title="Play from here">
+  15:34
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20962" target="_blank">
+    @arXiv 2407.20962
+   </a>
+   <span class="tweet-title">
+    Music to My Eyes: A New Dataset for Training AI to Understand Videos with Soundtrack
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    The Hong Kong University of Science and Technology, Peking University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a new dataset, MMTrail, that focuses on trailer videos, incorporating both visual and audio information, including music descriptions. Unlike previous datasets that primarily rely on visual captions, MMTrail aims to capture the inherent relationship between visual and audio elements, particularly music.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet34">
+ <div class="start-time-icon" title="Play from here">
+  15:59
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20272" target="_blank">
+    @arXiv 2407.20272
+   </a>
+   <span class="tweet-title">
+    LLMs on a Diet:  New Framework Makes Large Language Models Slim and Speedy!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Peking University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research focuses on building an efficient inference framework specifically for early-exit LLMs, a type of LLM that can skip layers during inference to save time and resources. This is different from previous work on LLM inference frameworks, which were designed for traditional LLMs that always run through all layers.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet35">
+ <div class="start-time-icon" title="Play from here">
+  16:20
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21740" target="_blank">
+    @arXiv 2407.21740
+   </a>
+   <span class="tweet-title">
+    Factor Analysis Gets a Contrastive Makeover:  Learning with a Twist!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Xidian University, MIT, University of Texas at Austin
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper introduces a new framework called Contrastive Factor Analysis (CFA) that combines traditional Factor Analysis (FA) with contrastive learning. Unlike FA, which directly models observation data, CFA models the relationship matrix, representing the relationship between positive and negative samples.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet36">
+ <div class="start-time-icon" title="Play from here">
+  16:44
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20447" target="_blank">
+    @arXiv 2407.20447
+   </a>
+   <span class="tweet-title">
+    AI Agent Makes Prescriptive Decisions, No Data Science Degree Required!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    MIT, IBM Research
+   </span>
+  </div>
+  <div class="primary-text">
+   This research focuses on making prescriptive AI accessible to users without data science expertise by developing a domain-adaptable conversational agent called PrecAIse. Unlike previous work that relied heavily on in-context learning, PrecAIse incorporates prompt tuning for improved accuracy and a fully automated pipeline for generalization to new datasets.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet37">
+ <div class="start-time-icon" title="Play from here">
+  17:08
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20455" target="_blank">
+    @arXiv 2407.20455
+   </a>
+   <span class="tweet-title">
+    Portrait Editing:  From Fake Friends to Feature-Preserving Fun!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Washington
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper proposes a novel training-based method for portrait editing that leverages automatically generated paired data to learn desired editing while preserving subject features. Unlike previous training-free methods, this approach doesn't rely on inverting images into a model's latent space, which can lead to editability issues and feature loss.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet38">
+ <div class="start-time-icon" title="Play from here">
+  17:32
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20859" target="_blank">
+    @arXiv 2407.20859
+   </a>
+   <span class="tweet-title">
+    LLM Agents:  Not So Smart After All?  New Attack Makes Them Go Bonkers!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    CISPA Helmholtz Center for Information Security, NetApp, Microsoft...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research focuses on a new type of attack against LLM agents that aims to disrupt their normal functioning by inducing malfunctions, rather than focusing on overtly harmful or policy-violating actions.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet39">
+ <div class="start-time-icon" title="Play from here">
+  17:57
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20754" target="_blank">
+    @arXiv 2407.20754
+   </a>
+   <span class="tweet-title">
+    Querying Inconsistent Knowledge Bases: When Rules Break, Costs Take Over!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Bordeaux, École Normale Supérieure
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a novel approach to querying inconsistent knowledge bases by assigning weights to both axioms and assertions, allowing for a cost-based evaluation of interpretations. This differs from previous work that primarily focused on repairing inconsistent ABoxes while leaving the TBox untouched.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet40">
+ <div class="start-time-icon" title="Play from here">
+  18:23
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21757" target="_blank">
+    @arXiv 2407.21757
+   </a>
+   <span class="tweet-title">
+    Movie Magic:  A Language Model That Gets the Plot Twists
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    National University of Singapore, Meta, DSO National Laboratories
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces MovieSeq, a multimodal language model that represents videos as interleaved sequences of images, plots, subtitles, and video history. This approach differs from previous work by allowing for flexible multimodal instructions, enabling the model to interact with videos in a more comprehensive and nuanced way.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet41">
+ <div class="start-time-icon" title="Play from here">
+  18:51
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20798" target="_blank">
+    @arXiv 2407.20798
+   </a>
+   <span class="tweet-title">
+    AI Agents Get a Diffusion Makeover: Learning Faster with Synthetic Experiences!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Imperial College London, Google DeepMind
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces Diffusion Augmented Agents (DAAG), a framework that uses diffusion models to modify visual observations, creating synthetic experiences for training reinforcement learning agents. This differs from previous work by leveraging diffusion models for autonomous, geometrically and temporally consistent data augmentation, enabling more efficient learning and transfer.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet42">
+ <div class="start-time-icon" title="Play from here">
+  19:18
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21124" target="_blank">
+    @arXiv 2407.21124
+   </a>
+   <span class="tweet-title">
+    Zero-Shot Health Predictions:  AI That's Smarter Than Your Doctor (Maybe)
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Massachusetts General Hospital, Harvard Medical School, AGH University of Science and Technology...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces ETHOS, a transformer-based model that predicts future health trajectories without requiring task-specific training or labeled data. This differs from previous work that often relies on fine-tuning for specific tasks.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet43">
+ <div class="start-time-icon" title="Play from here">
+  19:41
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21439" target="_blank">
+    @arXiv 2407.21439
+   </a>
+   <span class="tweet-title">
+    Multimodal Models Get a Reranking Makeover:  Fighting Noise with Knowledge and a Pinch of Visual Uncertainty!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    IDEA Research, Peking University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research tackles the "multi-granularity noisy correspondence" problem in multimodal retrieval-augmented generation.  Unlike previous work, it introduces a knowledge-enhanced reranking method using an instruction-tuned MLLM to filter out irrelevant images.  Additionally, it employs noise-injected training to improve the model's robustness to visual noise.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet44">
+ <div class="start-time-icon" title="Play from here">
+  20:08
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20266" target="_blank">
+    @arXiv 2407.20266
+   </a>
+   <span class="tweet-title">
+    AI Models on a Diet:  Low-Rank Decomposition Gets a Speed Boost
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Huawei Technologies
+   </span>
+  </div>
+  <div class="primary-text">
+   This research focuses on improving the efficiency of low-rank decomposition (LRD) for compressing AI models. Unlike previous work that primarily focused on compression, this paper explores strategies to accelerate both training and inference by optimizing rank selection and introducing layer freezing and merging techniques.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet45">
+ <div class="start-time-icon" title="Play from here">
+  20:37
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20256" target="_blank">
+    @arXiv 2407.20256
+   </a>
+   <span class="tweet-title">
+    LLMs:  From  Web  Wizards  to  Data  Dwarfs?
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    MIT, UW, Intel
+   </span>
+  </div>
+  <div class="primary-text">
+   This research investigates the performance of LLMs on enterprise data tasks, specifically text-to-SQL and semantic column type detection, highlighting the challenges and potential solutions for effectively utilizing LLMs in enterprise settings. This differs from previous work that primarily focused on LLMs' performance on public datasets.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet46">
+ <div class="start-time-icon" title="Play from here">
+  21:03
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20635" target="_blank">
+    @arXiv 2407.20635
+   </a>
+   <span class="tweet-title">
+    Robots Learn From Their Mistakes, And It's Hilarious!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    UC Berkeley
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces SOAR, a system that allows robots to autonomously improve their instruction-following skills by leveraging internet-scale knowledge from vision-language models (VLMs) and learning from their own experiences. This differs from previous work that often relies on costly human-provided demonstrations or hand-specified tasks.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet47">
+ <div class="start-time-icon" title="Play from here">
+  21:23
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21791" target="_blank">
+    @arXiv 2407.21791
+   </a>
+   <span class="tweet-title">
+    Deep Learning for Options Trading:  A No-Frills Approach to Making Bank
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Oxford
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a novel approach to options trading strategies using deep learning models. Unlike traditional methods that rely on specific market dynamics or assumptions about option pricing models, this approach directly learns mappings from market data to optimal trading signals.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet48">
+ <div class="start-time-icon" title="Play from here">
+  21:49
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21669" target="_blank">
+    @arXiv 2407.21669
+   </a>
+   <span class="tweet-title">
+    Empathy Bots Get a Synthetic Makeover: New Data Makes Them More Human
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Peking University, Chinese Academy of Sciences
+   </span>
+  </div>
+  <div class="primary-text">
+   This research proposes a novel method for generating high-quality empathetic data using a three-step pipeline. Unlike previous work that relies heavily on human-labeled data, this approach leverages large language models (LLMs) to automatically generate and curate empathetic responses.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet49">
+ <div class="start-time-icon" title="Play from here">
+  22:16
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21314" target="_blank">
+    @arXiv 2407.21314
+   </a>
+   <span class="tweet-title">
+    Diffusion Models:  Data Assimilation's New BFF?
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Peking University
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper proposes a novel data assimilation algorithm called SOAD (State-Observation Augmented Diffusion) that leverages generative models to handle nonlinear physical and observational models. Unlike previous score-based assimilation methods, SOAD's marginal posterior distribution is proven to match the real posterior under mild assumptions.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet50">
+ <div class="start-time-icon" title="Play from here">
+  22:39
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21783" target="_blank">
+    @arXiv 2407.21783
+   </a>
+   <span class="tweet-title">
+    Llama 3: The AI Herd That's Smarter Than Your Average Cow
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Meta
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper introduces Llama 3, a new family of language models that are trained on a significantly larger dataset than previous versions, including more code, math, and multilingual data. The paper also explores the use of system-level safety measures to mitigate potential risks associated with large language models.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet51">
+ <div class="start-time-icon" title="Play from here">
+  23:04
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21216" target="_blank">
+    @arXiv 2407.21216
+   </a>
+   <span class="tweet-title">
+    MRI Segmentation:  A Continual Learning Journey with a Memory for Features!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Technical University of Darmstadt, Stanford University, The Hessian Center for Artificial Intelligence
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a distribution-aware replay strategy for continual MRI segmentation. Unlike previous methods that rely on data rehearsal or parameter regularization, this approach uses a variational autoencoder (VAE) to model the distribution of features learned by the UNet, enabling pseudo-rehearsal without storing actual data.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet52">
+ <div class="start-time-icon" title="Play from here">
+  23:31
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21046" target="_blank">
+    @arXiv 2407.21046
+   </a>
+   <span class="tweet-title">
+    Masked Language Models:  The Fast and the Furious (of Text Generation)
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    CMU, Google
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper introduces a theoretical framework for analyzing Generative Masked Language Models (GMLMs), a non-autoregressive approach to text generation. It differs from previous work by focusing on the statistical efficiency of learning and the speed of inference, relating these aspects to the mixing time of a corresponding Markov Chain.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet53">
+ <div class="start-time-icon" title="Play from here">
+  23:59
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21721" target="_blank">
+    @arXiv 2407.21721
+   </a>
+   <span class="tweet-title">
+    Can AI Hear and See What You Can't? Open-Vocabulary Audio-Visual Segmentation is Here!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    UC Berkeley, CMU, Peking University...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a new task called "open-vocabulary audio-visual semantic segmentation," which goes beyond recognizing pre-defined categories. It aims to segment and classify sounding objects in videos, even those never seen or heard during training. This differs from previous work that focused on closed-set assumptions, where models could only identify objects they were trained on.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet54">
+ <div class="start-time-icon" title="Play from here">
+  24:24
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20990" target="_blank">
+    @arXiv 2407.20990
+   </a>
+   <span class="tweet-title">
+    AI Explains Itself:  Chatting with Your Car's Brain
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Oxford
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a traceable question-answering approach for explaining AI model outputs using LLMs and an external knowledge repository. This differs from previous work by integrating feature importance and contrastive explanations into the LLM's responses.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet55">
+ <div class="start-time-icon" title="Play from here">
+  24:51
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21467" target="_blank">
+    @arXiv 2407.21467
+   </a>
+   <span class="tweet-title">
+    Fundus Photos Predict Myopia: No More Eye Exams?
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Beijing Tongren Hospital, Capital Medical University, Beihang University...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research uses a deep learning model to predict myopia progression in children using only fundus images and baseline refraction data, unlike previous methods that rely on extensive data and multiple visits.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet56">
+ <div class="start-time-icon" title="Play from here">
+  25:20
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21615" target="_blank">
+    @arXiv 2407.21615
+   </a>
+   <span class="tweet-title">
+    AI-Made Metal: Can You Tell the Difference?
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Queen Mary University of London
+   </span>
+  </div>
+  <div class="primary-text">
+   This research focuses on the subjective evaluation of AI-generated progressive metal music in symbolic format, specifically guitar tablature, using a mixed methods approach. This differs from previous work by focusing on a less explored genre and using a more nuanced evaluation method.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet57">
+ <div class="start-time-icon" title="Play from here">
+  25:38
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20441" target="_blank">
+    @arXiv 2407.20441
+   </a>
+   <span class="tweet-title">
+    Multi-Agent Learning:  Faster Than a Speeding Bullet (Even With Delays!)
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Padua, Princeton University, North Carolina State University...
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper analyzes the convergence of an asynchronous multi-agent TD learning algorithm, AsyncMATD, which incorporates bounded delays in communication between agents. This differs from previous work by providing finite-time convergence guarantees for asynchronous MARL under Markovian sampling, a more realistic scenario than the i.i.d. sampling assumption used in prior studies.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet58">
+ <div class="start-time-icon" title="Play from here">
+  26:02
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21072" target="_blank">
+    @arXiv 2407.21072
+   </a>
+   <span class="tweet-title">
+    LLMs:  Smarter Than We Think, Or Just Better at Taking Tests?
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    M42
+   </span>
+  </div>
+  <div class="primary-text">
+   This research delves into the variability of accuracy metrics used to evaluate large language models (LLMs) by analyzing how different calculation methodologies impact performance. It focuses on multiple-choice question-answering tasks and compares the results of four popular LLMs across various benchmarks.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet59">
+ <div class="start-time-icon" title="Play from here">
+  26:24
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21341" target="_blank">
+    @arXiv 2407.21341
+   </a>
+   <span class="tweet-title">
+    Potato-Vision: Deep Learning Helps Harvesters See the Whole Spud
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    The University of Tokyo, University of Bonn
+   </span>
+  </div>
+  <div class="primary-text">
+   This research builds upon previous work using RGB-D cameras to estimate potato yield. However, it introduces a novel 3D shape completion network called CoRe++ that can accurately reconstruct the full 3D shape of potatoes from partially captured images, even when they are occluded. This is a significant improvement over previous methods that relied on multiple cameras or time-consuming laser triangulation techniques.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet60">
+ <div class="start-time-icon" title="Play from here">
+  26:49
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21712" target="_blank">
+    @arXiv 2407.21712
+   </a>
+   <span class="tweet-title">
+    Conversational AI's New Trick: When to Stop Googling!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Sheffield, University of Liverpool, University of Aberdeen...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research explores the need for external knowledge in every turn of a conversation, proposing a "gate" mechanism to decide when to retrieve information. Unlike previous work that assumes constant knowledge augmentation, this study investigates the adaptive use of external knowledge.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet61">
+ <div class="start-time-icon" title="Play from here">
+  27:18
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20276" target="_blank">
+    @arXiv 2407.20276
+   </a>
+   <span class="tweet-title">
+    AI's Got a Gambling Problem: Random Guessers Beat Sophisticated Algorithms!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    IBM
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a "random guesser test" to evaluate the rationality of AI systems in sequential decision-making scenarios. Unlike previous work that focuses on regret analysis, this study emphasizes the importance of exploration and highlights the potential for AI systems to favor overly low-risk options.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet62">
+ <div class="start-time-icon" title="Play from here">
+  27:55
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21488" target="_blank">
+    @arXiv 2407.21488
+   </a>
+   <span class="tweet-title">
+    Hourglass of Data: How a Simple Trick Makes Generative Retrieval Smarter
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Central South University, Tsinghua University, JD.com
+   </span>
+  </div>
+  <div class="primary-text">
+   This research identifies and addresses a "hourglass" phenomenon in Residual Quantization-based Semantic Identifiers (RQ-SID) used in generative retrieval. This phenomenon, characterized by overly concentrated codebook tokens in intermediate layers, hinders the full utilization of generative retrieval methods. The paper proposes two methods to mitigate this issue, improving codebook utilization and addressing token long-tail distributions.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet63">
+ <div class="start-time-icon" title="Play from here">
+  28:22
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21001" target="_blank">
+    @arXiv 2407.21001
+   </a>
+   <span class="tweet-title">
+    AI's Got a Gender Bias:  Can Robots Tell a Man From a Woman Doing the Dishes?
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Sharif University of Technology, École Polytechnique Fédérale de lausanne (EPFL), IDIAP research institute...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research focuses on a specific type of bias in vision-language models (VLMs) called "Gender-Activity Binding (GAB) bias."  It investigates how VLMs associate activities with specific genders, even when the activity is performed by someone of the opposite gender. This is different from previous work that has looked at gender bias in VLMs more generally.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet64">
+ <div class="start-time-icon" title="Play from here">
+  28:49
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20893" target="_blank">
+    @arXiv 2407.20893
+   </a>
+   <span class="tweet-title">
+    ECG Diagnosis Gets a Brain Boost: MambaCapsule Makes Heart Health Transparent!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Zhejiang University, Stanford University, Shanghai University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces MambaCapsule, a deep neural network for ECG arrhythmia classification that focuses on explainability. Unlike previous models that prioritize performance, MambaCapsule provides not only a confidence score but also signal features, making the diagnostic process more transparent.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet65">
+ <div class="start-time-icon" title="Play from here">
+  29:14
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20281" target="_blank">
+    @arXiv 2407.20281
+   </a>
+   <span class="tweet-title">
+    DNNs on a Diet:  Semantic Slicing for Leaner, Meaner Models
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Nanyang Technological University, Huazhong University of Science and Technology
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a new technique called "semantic slicing" that identifies and manipulates individual neurons within a deep neural network (DNN) for model maintenance tasks. Unlike previous work that focused on layer-level manipulation, this approach allows for more precise control over the model's structure and behavior.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet66">
+ <div class="start-time-icon" title="Play from here">
+  29:48
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21225" target="_blank">
+    @arXiv 2407.21225
+   </a>
+   <span class="tweet-title">
+    AI Makes Quantum Compiling a Breeze:  New Method Speeds Up Unitary Synthesis
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    IBM
+   </span>
+  </div>
+  <div class="primary-text">
+   This research explores the use of AI methods for approximate compiling of unitaries, focusing on the use of fixed two-qubit gates and arbitrary single-qubit rotations. The authors propose AI-driven approaches for template selection and parameter prediction, which are then refined through gradient descent to achieve the desired fidelity. This approach differs from previous work by utilizing deep learning models for both template selection and parameter prediction, rather than relying solely on exhaustive search methods.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet67">
+ <div class="start-time-icon" title="Play from here">
+  30:12
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20446" target="_blank">
+    @arXiv 2407.20446
+   </a>
+   <span class="tweet-title">
+    Event-Based Vision:  A Dataset for Cars That See Like Humans!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Michigan
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a new dataset, MEVDT, specifically designed for event-based vision, a technology inspired by the human retina. Unlike previous datasets, MEVDT provides synchronized streams of event data and grayscale images, along with detailed annotations for object detection and tracking.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet68">
+ <div class="start-time-icon" title="Play from here">
+  30:35
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21025" target="_blank">
+    @arXiv 2407.21025
+   </a>
+   <span class="tweet-title">
+    Market Makers:  High-Frequency Trading's New Game of Speed and Complexity
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Princeton University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research provides a theoretical analysis of reinforcement learning (RL) in high-frequency market making, focusing on the effects of sampling frequency on the algorithm's performance. Unlike previous work that primarily focused on methodological research, this paper explores the trade-off between learning error and complexity when adjusting the sampling frequency.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet69">
+ <div class="start-time-icon" title="Play from here">
+  30:57
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21263" target="_blank">
+    @arXiv 2407.21263
+   </a>
+   <span class="tweet-title">
+    X-Ray Vision: UMAP Uncovers Hidden Errors in Medical Datasets
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Princeton University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research uses the UMAP algorithm to identify outlier images in large radiological datasets, focusing on the unique clusters formed by these anomalies. This approach differs from previous work by leveraging the graph-based structure of UMAP to visualize and analyze outliers, rather than relying solely on statistical methods.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet70">
+ <div class="start-time-icon" title="Play from here">
+  31:19
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21220" target="_blank">
+    @arXiv 2407.21220
+   </a>
+   <span class="tweet-title">
+    DeepBaR: Sneaky Backdoors for Deep Learning, One Faulty ReLU at a Time!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    ETH Zurich
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces DeepBaR, a novel backdoor attack that exploits faults in deep neural networks during training, specifically targeting ReLU activation functions. Unlike previous work that focused on manipulating weights or training data, DeepBaR leverages the vulnerability of ReLU functions to inject backdoors by causing them to output zero.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet71">
+ <div class="start-time-icon" title="Play from here">
+  31:47
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21118" target="_blank">
+    @arXiv 2407.21118
+   </a>
+   <span class="tweet-title">
+    KV-Cache Compression:  Squeezing LLMs with Low-Rank Magic!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    National Yang Ming Chiao Tung University, University of Washington
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper introduces Palu, a novel KV-Cache compression framework that utilizes low-rank projection to reduce the size of the KV-Cache. Unlike previous methods that focus on quantization or token eviction, Palu explores the hidden dimensions of KV tensors, where redundancy often occurs.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet72">
+ <div class="start-time-icon" title="Play from here">
+  32:08
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20241" target="_blank">
+    @arXiv 2407.20241
+   </a>
+   <span class="tweet-title">
+    NudgeRank™:  AI Makes Your Steps Count (and Your Health Improve!)
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Washington
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces NudgeRank™, a recommender system that uses a novel combination of graph neural networks and a knowledge graph to deliver personalized health nudges. Unlike previous work that relies on rule-based systems or focuses on a single health goal, NudgeRank™ dynamically generates nudges for multiple health outcomes, considering individual preferences and contextual states.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet73">
+ <div class="start-time-icon" title="Play from here">
+  32:34
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20257" target="_blank">
+    @arXiv 2407.20257
+   </a>
+   <span class="tweet-title">
+    Video Question Answering:  It's Not Just About What, But Why and When!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    CMU
+   </span>
+  </div>
+  <div class="primary-text">
+   This research focuses on improving Video Question Answering (VQA) models by addressing the limitations of existing approaches. Unlike previous methods that rely on either single-frame or complete-video information, this paper proposes a novel approach that leverages a smart aggregation of sub-sampled information to enhance performance.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet74">
+ <div class="start-time-icon" title="Play from here">
+  32:57
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20535" target="_blank">
+    @arXiv 2407.20535
+   </a>
+   <span class="tweet-title">
+    DeepSpeech Models:  Cochlear Implants Get a Brain Boost!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Columbia University, DeepMind
+   </span>
+  </div>
+  <div class="primary-text">
+   This research uses a deep neural network model, DeepSpeech2, to simulate how cochlear implants process speech signals. Unlike previous work that focused on modeling the cochlea itself, this study investigates the entire auditory processing hierarchy, from sound to phonemes to words.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet75">
+ <div class="start-time-icon" title="Play from here">
+  33:23
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21748" target="_blank">
+    @arXiv 2407.21748
+   </a>
+   <span class="tweet-title">
+    Robot Diagnosis: When Your Machine Learns to Feel Sick
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Stanford University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a framework for diagnosing distribution shifts in real-time systems using multiple martingale-based monitors. Unlike previous work that focused on detecting shifts in system inputs, this approach monitors both inputs and outputs, enabling more precise identification of the underlying cause of the shift.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet76">
+ <div class="start-time-icon" title="Play from here">
+  33:49
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21185" target="_blank">
+    @arXiv 2407.21185
+   </a>
+   <span class="tweet-title">
+    Amelia: The AI That Predicts Airport Chaos (and Maybe Saves Lives)
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Carnegie Mellon University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces Amelia-48, a large-scale dataset of airport surface movement data, and Amelia-TF, a transformer-based model trained on this dataset to predict aircraft trajectories. Unlike previous work, this study focuses on generalizability across multiple airports, addressing the lack of publicly available datasets and the need for models that can adapt to different airport layouts and traffic patterns.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet77">
+ <div class="start-time-icon" title="Play from here">
+  34:13
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21243" target="_blank">
+    @arXiv 2407.21243
+   </a>
+   <span class="tweet-title">
+    Diffusion Models Get a Smart Corrector:  Informed Correctors Boost Discrete Sampling!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Stanford University, Google, Microsoft
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a new family of "informed correctors" for discrete diffusion models, which leverage information learned by the model to more effectively counteract discretization error during sampling. This approach differs from previous work that relied on standard forward-backward correctors, which often proved ineffective in fixing errors, especially in absorbing state diffusion.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet78">
+ <div class="start-time-icon" title="Play from here">
+  34:29
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20466" target="_blank">
+    @arXiv 2407.20466
+   </a>
+   <span class="tweet-title">
+    Reinforcement Learning Gets a Speed Boost:  Pre-trained Critics Make Agents Learn Faster!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Washington, Western Washington University, Kennesaw State University...
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a novel approach to accelerate reinforcement learning by leveraging pre-trained critic value functions from multiple environments. Unlike traditional methods that require extensive retraining, this approach integrates existing knowledge to enable agents to adapt swiftly to new settings.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet79">
+ <div class="start-time-icon" title="Play from here">
+  34:55
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21070" target="_blank">
+    @arXiv 2407.21070
+   </a>
+   <span class="tweet-title">
+    Can an Octopus Learn Science? A Playful Debate on AI and Understanding
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Toronto
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper presents a lecture and activity designed to challenge the argument put forth by Bender and Koller in their 2020 ACL paper. It focuses on the counterarguments to their claim that a language model, like an octopus, can't truly understand the world based solely on data.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet80">
+ <div class="start-time-icon" title="Play from here">
+  35:15
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20444" target="_blank">
+    @arXiv 2407.20444
+   </a>
+   <span class="tweet-title">
+    Sampling from Unnormalized Densities:  A Neural JKO with a Rejection Twist!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University College London, Free University of Berlin
+   </span>
+  </div>
+  <div class="primary-text">
+   This paper proposes a new sampling method that combines continuous normalizing flows (CNFs) with rejection-resampling steps based on importance weights. This approach aims to overcome local minima and slow convergence issues often encountered in Wasserstein gradient flows (WGFs) for multimodal distributions.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet81">
+ <div class="start-time-icon" title="Play from here">
+  35:48
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20529" target="_blank">
+    @arXiv 2407.20529
+   </a>
+   <span class="tweet-title">
+    LLMs:  Not So Smart After All?  New Research Uncovers Their Hidden Weaknesses!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Microsoft
+   </span>
+  </div>
+  <div class="primary-text">
+   This research goes beyond simply identifying vulnerabilities in LLMs and proposes two novel mitigation strategies: "Model Editing" and "Chroma Teaming."  Model Editing focuses on modifying the LLM itself to improve its behavior, while Chroma Teaming brings together different teams (red, blue, green, and purple) to work collaboratively on LLM security.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet82">
+ <div class="start-time-icon" title="Play from here">
+  36:13
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.20267" target="_blank">
+    @arXiv 2407.20267
+   </a>
+   <span class="tweet-title">
+    SMILES, But Make It Fashion: A New Foundation Model for Chemical Language
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    IBM
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a new family of encoder-decoder foundation models for chemical language, pre-trained on a curated dataset of 91 million SMILES samples from PubChem. This differs from previous work by focusing on a larger, more carefully curated dataset and incorporating a Mixture-of-Experts approach for scalability.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet83">
+ <div class="start-time-icon" title="Play from here">
+  36:35
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21054" target="_blank">
+    @arXiv 2407.21054
+   </a>
+   <span class="tweet-title">
+    AI Gets a Heart: New Research Makes Machines Understand Your Feelings
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Toronto, William &amp; Mary
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a new task called "Sentiment Reasoning" for both speech and text. It focuses on analyzing the attitude expressed through human voice, going beyond simple sentiment polarity. This is different from previous work that primarily focused on text-based sentiment analysis.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet84">
+ <div class="start-time-icon" title="Play from here">
+  37:12
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21273" target="_blank">
+    @arXiv 2407.21273
+   </a>
+   <span class="tweet-title">
+    Ultrasound Segmentation Gets a Confidence Boost with MSU-Net!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    CMU
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces MSU-Net, a multi-stage ensemble approach for training U-Nets to improve uncertainty estimation in ultrasound image segmentation. Unlike previous single-model architectures, MSU-Net leverages a decorrelation maximization method to select diverse ensemble members, resulting in more accurate and reliable predictions.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet85">
+ <div class="start-time-icon" title="Play from here">
+  37:39
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21191" target="_blank">
+    @arXiv 2407.21191
+   </a>
+   <span class="tweet-title">
+    GenRec:  Recommending Your Next Favorite Thing, One Masked Item at a Time!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Michigan, University of Cambridge
+   </span>
+  </div>
+  <div class="primary-text">
+   This research proposes GenRec, a generative model for personalized sequential recommendation that utilizes a masked item prediction objective for both pretraining and finetuning. Unlike previous methods that rely on manually designed prompts, GenRec learns sequential patterns directly from the user-item interaction data.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet86">
+ <div class="start-time-icon" title="Play from here">
+  38:09
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21347" target="_blank">
+    @arXiv 2407.21347
+   </a>
+   <span class="tweet-title">
+    Deep Learning's New Shuffle:  Privacy-Preserving Gradients Go Block-by-Block!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    CMU
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a new algorithm called Differentially Private Block-wise Gradient Shuffle (DP-BloGS) for deep learning. Unlike traditional DP-SGD, which adds noise to all gradients uniformly, DP-BloGS takes a parameter-wise approach, allowing for different privacy levels for different parts of the model.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet87">
+ <div class="start-time-icon" title="Play from here">
+  38:33
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21320" target="_blank">
+    @arXiv 2407.21320
+   </a>
+   <span class="tweet-title">
+    LLMs Go Fluid: AI Makes CFD Simulations a Breeze!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    Tsinghua University
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces MetaOpenFOAM, a framework that uses multiple AI agents to automate CFD simulations using natural language input. Unlike previous work, this framework leverages the MetaGPT assembly line paradigm and Langchain's Retrieval-Augmented Generation (RAG) technology to break down complex tasks into manageable subtasks.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet88">
+ <div class="start-time-icon" title="Play from here">
+  38:56
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21317" target="_blank">
+    @arXiv 2407.21317
+   </a>
+   <span class="tweet-title">
+    Pathology's New BFF: Foundation Models are Here to Help!
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    The University of Tokyo
+   </span>
+  </div>
+  <div class="primary-text">
+   This research focuses on the application of Foundation Models (FMs) in pathology, specifically highlighting their potential to address the challenges of annotation cost and limited public datasets. Unlike traditional AI models, FMs are trained on massive datasets and can be adapted to a wide range of tasks, making them more efficient and versatile.
+  </div>
+ </div>
+</div>
+<div class="tweet" id="tweet89">
+ <div class="start-time-icon" title="Play from here">
+  39:30
+ </div>
+ <div class="tweet-content">
+  <div class="tweet-header">
+   <a class="arxiv-id" href="https://arxiv.org/abs/2407.21638" target="_blank">
+    @arXiv 2407.21638
+   </a>
+   <span class="tweet-title">
+    AI Radiologists Need a Second Opinion: Auditing for Accuracy in Report Generation
+   </span>
+  </div>
+  <div class="institute-line">
+   <img alt="Institute Icon" class="institute-icon" src="assets/buttonInstitute.svg"/>
+   <span class="institute-text">
+    University of Oxford
+   </span>
+  </div>
+  <div class="primary-text">
+   This research introduces a novel quality control framework for AI-generated radiology reports. Unlike previous work that focuses on improving the accuracy of the reports themselves, this study proposes an independent auditing system using auxiliary components to assess the reliability of the generated content.
+  </div>
+ </div>
+</div>
+
+
+        <div
+            style="padding: 50px 0; text-align: center; margin: 5px 0; font-weight: 300; font-size: 10px; color: #000000;">
+            Opening music
+            from <a href="https://ikson.com" target="_blank" style="color: black; text-decoration: none;">TELL
+                YOUR STORY by ikson</a></div>
+        <div style="height: 50px;"></div>
+    </div>
+
+    <footer class="player-footer">
+        <div class="player-detail-hidden-on-small-screen">
+            <div id="audio-title" class="tweet-title-small">Listen and learn ^.^</div>
+            <div style="height: 2px;"></div>
+            <div id="audio-institutes" class="institute-text-small"></div>
+        </div>
+        <div class="control-panel">
+            <div class="control-horizontal">
+                <div id="playSpeedButton" title="Adjust speed">
+                    <div id="selectedSpeed">1&times;</div>
+                    <div class="speedMenuItems">
+                        <div data-value="0.6">Speed 0.6&times;</div>
+                        <div data-value="0.8">Speed 0.8&times;</div>
+                        <div data-value="1" class="selected">Speed 1&times;</div>
+                        <div data-value="1.2">Speed 1.2&times;</div>
+                        <div data-value="1.4">Speed 1.4&times;</div>
+                        <div data-value="1.6">Speed 1.6&times;</div>
+                    </div>
+                    <select id="speedOptionsHidden">
+                        <option value="0.6">0.6&times;</option>
+                        <option value="0.8">0.8&times;</option>
+                        <option value="1" selected>1&times;</option>
+                        <option value="1.2">1.2&times;</option>
+                        <option value="1.4">1.4&times;</option>
+                        <option value="1.6">1.6&times;</option>
+                    </select>
+                </div>
+                <div id="playLastButton" style="position: relative;">
+                    <div class="footerButtonMask"></div>
+                    <button class="controllerButton" onclick="playAdjacentTweet(false)" title="Play last" disabled>
+                        <img src="assets/buttonLastEpisode.svg" alt="Last" style="width: 12px;">
+                    </button>
+                </div>
+                <button class="controllerButton" onclick="scrollToCurrentTweet()" title="Scoll to the current episode">
+                    <img id="locateImage" src="assets/buttonTarget.svg" alt="Locate">
+                </button>
+                <button class="controllerButton" onclick="togglePlayPause()" title="Play/Pause">
+                    <img id="playPauseImage" src="assets/buttonPlay.svg" alt="Play">
+                </button>
+                <div id="playNextButton" style="position: relative;">
+                    <div class="footerButtonMask"></div>
+                    <button class="controllerButton" onclick="playAdjacentTweet(true)" title="Play next" disabled>
+                        <img src="assets/buttonNextEpisode.svg" alt="Next" style="width: 12px;">
+                    </button>
+                </div>
+            </div>
+            <div class="control-horizontal">
+                <div id="progressTime">0:00</div>
+                <div id="progressContainer" onclick="seek(event)">
+                    <div id="progressBar"></div>
+                    <div id="progressCircle" draggable="true"></div>
+                </div>
+                <audio id="audioPlayer"
+                    src="https://d2irtorupa9e8g.cloudfront.net/daily_podcast/202408010835_audio.mp3"></audio>
+                <div id="progressTime"><span id="audioDuration">Loading...</span></div>
+            </div>
+        </div>
+    </footer>
+    <div id="privacyModal" class="modal"></div>
+    <script src="script.js"></script>
+    <script src="calendar.js"></script>    
+    <script>
+        fetch('https://ribbitribbit.co/privacy.html')
+            .then(response => response.text()) // Convert the response to text
+            .then(data => {
+                document.getElementById('privacyModal').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading privacy:', error));
+    </script>
+</body>
+</html>
