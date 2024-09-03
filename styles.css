@@ -1,10 +1,17 @@
 html,
+
+:root {
+    --header-height: 60px;
+    --footer-height: 60px;
+    /* --footer-color: #f8f8f8; */
+    --footer-color: #ffffff;
+}
+
 body {
     height: 100%;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* Ensures padding and border are included in width/height calculations */
 }
 
 body {
@@ -17,6 +24,176 @@ body {
     justify-content: center;
 }
 
+#selectedDate {
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 0.9;
+    width: 250px;
+    border-radius: 5px;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+.flatpickr-calendar {
+    font-family: 'Dosis', sans-serif;
+    border-radius: 10px;
+}
+
+.flatpickr-day,
+.flatpickr-weekdays {
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+}
+
+#externalLinkButtons {
+    display: flex;
+    justify-content: center;
+}
+
+.highlightNumber {
+    font-family: 'Dosis', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1.0;
+}
+
+.today-container {
+    width: 100%;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: white;
+    overflow: hidden;
+}
+
+.today-header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.today-date-large {
+    font-size: 60px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.today-date-details {
+    font-size: 22px;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+}
+
+.today-date-details div {
+    text-align: left;
+}
+
+.today-date-details span {
+    font-size: 18px;
+    font-weight: normal;
+}
+
+.today-picks-header {
+    background-color: black;
+    color: white;
+    padding: 10px 0;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.today-picks {
+    font-size: 50px;
+    font-weight: bold;
+    padding: 10px 0;
+}
+
+.today-papers {
+    font-size: 18px;
+    font-weight: bold;
+    padding-bottom: 10px;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: var(--header-height);
+    background-color: #ffffff;
+    /* padding: 10px 0; */
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
+    display: flex;
+    align-items: center;
+    z-index: 1000;
+}
+
+.header-title {
+    flex-grow: 1;
+    /* font-size: 1.5em;
+    font-weight: bold; */
+    color: #000000;
+}
+
+.externalLinkButton {
+    border: none;
+    padding: 0 6px;
+}
+
+/* Dropdown Button */
+.dropbtn {
+    border: none;
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    float: right;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: var(--footer-color);
+    padding: 3px 0;
+    font-weight: 300;
+    font-size: 14px;
+    min-width: 220px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+.externalLinkMenuItemMandatory {
+    display: flex;
+}
+
+.externalLinkMenuItem {
+    display: none;
+}
+
+/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+.show {
+    display: block;
+}
+
 .container {
     width: 100%;
     max-width: 600px;
@@ -24,9 +201,14 @@ body {
     box-sizing: border-box;
 }
 
-.header {
+#topblock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin-bottom: 0px;
+    padding: 10px;
 }
 
 .notification-text {
@@ -38,22 +220,6 @@ body {
     margin-right: 20px;
 }
 
-.header-text {
-    font-family: 'Roboto', sans-serif;
-    font-weight: 700;
-    font-size: 16px;
-    color: #000000;
-}
-
-.subheader-text {
-    text-align: center;
-    margin: 5px 0;
-    line-height: 1.2;
-    font-weight: 300;
-    font-size: 10px;
-    color: #000000;
-}
-
 .current-date {
     font-size: 1.2em;
     color: #555555;
@@ -63,6 +229,7 @@ body {
     display: flex;
     padding: 10px;
     border-bottom: 0.5px solid #000000;
+    scroll-margin-top: var(--header-height);
 }
 
 .tweet:last-child {
@@ -71,27 +238,47 @@ body {
 }
 
 .tweet-title {
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Dosis', sans-serif;
     font-weight: 700;
-    font-size: 16px;
-    line-height: 1;
+    font-size: 17px;
+    line-height: 0.9;
     color: #000000;
-    margin-bottom: 5px;
-    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.tweet-title-small {
+    font-family: 'Dosis', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 1.25;
+    color: #000000;
+    display: -webkit-box;
+    /* Display as a flexbox */
+    -webkit-box-orient: vertical;
+    /* Orient the flexbox vertically */
+    -webkit-line-clamp: 2;
+    /* Limit to 2 lines */
+    overflow: hidden;
+    /* Hide the overflow */
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) at the end */
+    padding-bottom: 3px;
 }
 
 .start-time-icon {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 48px;
-    height: 24px;
+    /* width: 46px; */
+    height: 22px;
     border-radius: 8px;
     background-color: #1FB36E;
     color: #ffffff;
-    font-weight: 500;
+    font-weight: 300;
+    padding: 0px 3px;
     margin-right: 10px;
-    font-size: 14px;
+    font-size: 13px;
+    cursor: pointer;
 }
 
 .tweet-content {
@@ -103,12 +290,19 @@ body {
 }
 
 .arxiv-id {
-    display: block;
+    display: inline;
     font-family: 'Roboto', sans-serif;
     font-weight: 300;
     font-size: 14px;
     color: #000000;
-    margin-bottom: 5px
+}
+
+.arxiv-id::after {
+    content: "\A";
+    /* Inserts a newline */
+    white-space: pre;
+    display: block;
+    line-height: 0.3em;
 }
 
 .institute-line {
@@ -125,6 +319,7 @@ body {
 }
 
 .primary-text {
+    font-family: 'Roboto', sans-serif;
     line-height: 1.2;
     font-weight: 400;
     font-size: 15px;
@@ -138,31 +333,42 @@ body {
     color: #000000;
 }
 
+.institute-text-small {
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: 13px;
+    color: #000000;
+    display: -webkit-box;
+    /* Display as a flexbox */
+    -webkit-box-orient: vertical;
+    /* Orient the flexbox vertically */
+    -webkit-line-clamp: 1;
+    /* Limit to 3 lines */
+    overflow: hidden;
+    /* Hide the overflow */
+    text-overflow: ellipsis;
+    /* Add ellipsis (...) at the end */
+}
+
 button {
     padding: 10px 20px;
     font-size: 16px;
 }
 
-#privacyButton {
-    display: flex;
-    /* Align children vertically */
-    align-items: center;
-    /* Center-align children horizontally */
-    justify-content: center;
-    /* Center-align children vertically */
-    background: none;
-    border: none;
-    /* Black border as specified */
-    cursor: pointer;
-    padding: 5px 10px;
-    /* Set width and height to the same size for a square */
-    /* height: 55px;
-    width: 55px; */
-    /* Padding inside the button */
-    padding-bottom: 200px;
+.footerButtonMask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.8;
+    background-color: var(--footer-color);
+    /* Adjust the opacity to control how much of the content is visible */
+    pointer-events: none;
+    /* Make sure the mask doesn't block interaction with the content */
 }
 
-#controllerButton {
+.controllerButton {
     display: flex;
     flex-direction: column;
     /* Align children vertically */
@@ -171,23 +377,29 @@ button {
     justify-content: center;
     /* Center-align children vertically */
     background: none;
-    border: 2px solid black;
+    border: 1.5px solid black;
     /* Black border as specified */
-    border-radius: 10px;
+    border-radius: 5px;
     /* Rounded corners for the rectangle */
     cursor: pointer;
     padding: 5px 10px;
     margin-left: 5px;
     /* Set width and height to the same size for a square */
-    height: 55px;
-    width: 55px;
+    height: 35px;
+    width: 35px;
     /* Padding inside the button */
+}
+
+.controllerButton.mask-on {
+    mask-image: linear-gradient(90deg, transparent 50%, black 50%);
+    mask-size: 100% 100%;
+    -webkit-mask-image: linear-gradient(90deg, transparent 50%, black 50%);
+    -webkit-mask-size: 100% 100%;
 }
 
 #playPauseImage {
     width: 12px;
     height: auto;
-    margin-bottom: 2px;
 }
 
 #locateImage {
@@ -201,9 +413,9 @@ button {
     left: 0;
     right: 0;
     /* Ensures the footer spans the entire width of the viewport */
-    height: 50px;
-    background-color: #f8f8f8;
-    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2);
+    height: var(--footer-height);
+    background-color: var(--footer-color);
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -218,6 +430,14 @@ button {
     /* Ensures there is spacing between the button and the progress bar */
 }
 
+.player-detail-hidden-on-small-screen {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
 #controls {
     display: flex;
     /* flex-direction: column; */
@@ -225,21 +445,45 @@ button {
     margin-right: 20px;
 }
 
+.control-panel {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* Center-align children vertically */
+    width: 100%;
+}
+
+.control-horizontal {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding: 5px 0;
+}
+
+/* .control-horizontal {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+} */
+
 #progressContainer {
     flex-grow: 1;
     /* Takes up all available space after accounting for the play button */
     height: 2px;
-    background-color: #000;
+    /* background-color: #000; */
+    background-color: #D3D3D3;
     position: relative;
     user-select: none;
     cursor: pointer;
-    margin-right: 20px;
+    margin-right: 6px;
+    margin-left: 6px;
 }
 
 #progressBar {
     width: 0;
     height: 100%;
-    background-color: #D3D3D3;
+    background-color: #000;
     /* Changed for visibility */
 }
 
@@ -257,11 +501,126 @@ button {
 
 #progressTime {
     font-size: 14px;
+    font-weight: 300;
+    font-size: 13px;
+}
+
+/* Modal (popup) container */
+.modal {
+    display: none;
+    flex-direction: column;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1000;
+    /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Black background with opacity */
+    /* overflow: auto; */
+    /* Enable scroll if needed */
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal content */
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    max-height: 60%;
+    align-items: flex-end;
+    justify-content: center;
+    background-color: #ffffff;
+}
+
+.modal-text {
+    background-color: #ffffff;
+    /* margin: 15% auto; */
+    margin: auto auto;
+    /* Centered, with some space from the top */
+    padding: 20px;
+    border: none;
+    overflow-y: auto;
+    /* Enable vertical scrolling if content overflows */
     font-family: 'Roboto', sans-serif;
-    font-weight: 500;
+    font-weight: 300;
     font-size: 14px;
 }
 
+/* Close button */
+.close-button {
+    border: none;
+    cursor: pointer;
+    width: 15px;
+    background-color: #ffffff;
+    margin-right: 5px;
+}
+
+/* Hide the default select */
+#playSpeedButton {
+    position: relative;
+}
+
+#playSpeedButton select {
+    display: none;
+}
+
+/* Style the custom button */
+#selectedSpeed {
+    display: flex;
+    border: 1.5px solid black;
+    align-items: center;
+    justify-content: center;
+    /* Black border as specified */
+    border-radius: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 13px;
+    /* Rounded corners for the rectangle */
+    cursor: pointer;
+    padding: 0 0;
+    /* Set width and height to the same size for a square */
+    height: 31px;
+    width: 31px;
+}
+
+/* Style the dropdown */
+.speedMenuItems {
+    display: none;
+    position: absolute;
+    background-color: var(--footer-color);
+    padding: 3px 0;
+    font-weight: 300;
+    font-size: 14px;
+    min-width: 100px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    right: 0;
+    bottom: 100%;
+    /* Position the dropdown above the button */
+    display: none;
+    cursor: pointer;
+    /* Hide the dropdown initially */
+}
+
+.speedMenuItems div {
+    color: black;
+    padding: 8px 10px;
+    text-decoration: none;
+    display: block;
+}
+
+/* Show the dropdown when the button is clicked */
+#selectedSpeed.open~.speedMenuItems {
+    display: block;
+}
 
 @media (max-width: 600px) {
     .container {
@@ -273,8 +632,39 @@ button {
     }
 
     .start-time-icon {
-        width: 43px;
-        height: 20px;
+        font-size: 13px;
+    }
+
+    .primary-text {
+        line-height: 1.15;
+        font-size: 15px;
+    }
+
+    .tweet-title {
+        font-weight: 700;
+        font-size: 17px;
+        line-height: 1;
+        margin-top: 6px;
+    }
+
+    .institute-text {
+        line-height: 1.15;
+        font-size: 15px;
+    }
+
+    .arxiv-id {
         font-size: 14px;
+    }
+
+    .player-detail-hidden-on-small-screen {
+        display: none;
+    }
+
+    #externalLinkButtons {
+        display: none;
+    }
+
+    .externalLinkMenuItem {
+        display: flex;
     }
 }
