@@ -377,7 +377,7 @@ button {
     justify-content: center;
     /* Center-align children vertically */
     background: none;
-    border: 3px solid black;
+    border: 2px solid black;
     /* Black border as specified */
     border-radius: 5px;
     /* Rounded corners for the rectangle */
@@ -574,7 +574,7 @@ button {
 /* Style the custom button */
 #selectedSpeed {
     display: flex;
-    border: 1.5px solid black;
+    border: 2px solid black;
     align-items: center;
     justify-content: center;
     /* Black border as specified */
