@@ -377,7 +377,7 @@ button {
     justify-content: center;
     /* Center-align children vertically */
     background: none;
-    border: 1.5px solid black;
+    border: 2px solid black;
     /* Black border as specified */
     border-radius: 5px;
     /* Rounded corners for the rectangle */
