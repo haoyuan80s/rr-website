@@ -13,7 +13,8 @@ function ToggleDropDown() {
 }
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
-    if (!event.target.matches('#menuButtonId')) {
+    console.log("NOODLE", event.target);
+    if (!event.target.matches('#menuButtonId') && !event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
         for (i = 0; i < dropdowns.length; i++) {
@@ -202,7 +203,7 @@ progressCircle.addEventListener('touchstart', function (event) {
     isDragging = true;
     document.addEventListener('touchmove', onTouchMove);
     document.addEventListener('touchend', onTouchEnd);
-});
+}, { passive: true });
 
 function onMouseMove(event) {
     seek(event.clientX);
