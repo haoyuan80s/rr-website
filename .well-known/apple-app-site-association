@@ -8,6 +8,7 @@
         "components": [
           {
             "/": "/paper/*",
+            "?": { "id": ?* },
             "comment": "Matches any URL with a path that starts with /paper/."
           }
         ]
