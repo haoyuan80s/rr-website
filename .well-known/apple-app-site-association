@@ -1,0 +1,42 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appID": "46RU75X585.com.ribbit2.RrArxiv",
+        "paths": [
+          "*"
+        ]
+      }
+    ]
+  }
+}
+
+{
+  "applinks": {
+      "details": [
+           {
+             "appIDs": [ "46RU75X585.com.ribbit2.RrArxiv" ],
+             "components": [
+               {
+                  "#": "no_universal_links",
+                  "exclude": true,
+                  "comment": "Matches any URL with a fragment that equals no_universal_links and instructs the system not to open it as a universal link."
+               },
+               {
+                  "/": "/paper/*",
+                  "comment": "Matches any URL with a path that starts with /buy/."
+               }
+             ]
+           }
+       ]
+   },
+   "webcredentials": {
+      "apps": [ "46RU75X585.com.ribbit2.RrArxiv" ]
+   },
+
+
+    "appclips": {
+        "apps": ["46RU75X585.com.ribbit2.RrArxiv.Clip"]
+    }
+}

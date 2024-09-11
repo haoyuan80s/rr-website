@@ -1831,13 +1831,6 @@
         document.getElementById('privacyModal').innerHTML = data;
       })
       .catch(error => console.error('Error loading privacy.html:', error));
-    fetch('https://ribbitribbit.co/apple-app-site-association')
-      .then(response => response.text()) // Convert the response to text
-      .then(data => {
-        document.getElementById('apple-app-site-association').innerHTML = data;
-      })
-      .catch(error => console.error('Error loading apple-app-site-association:', error));
-
   </script>
 </body>
 
