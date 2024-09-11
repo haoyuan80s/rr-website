@@ -1834,9 +1834,10 @@
     fetch('https://ribbitribbit.co/apple-app-site-association')
       .then(response => response.text()) // Convert the response to text
       .then(data => {
-        document.getElementById('privacyModal').innerHTML = data;
+        document.getElementById('apple-app-site-association').innerHTML = data;
       })
-      .catch(error => console.error('Error loading apple-app-site-association', error));
+      .catch(error => console.error('Error loading apple-app-site-association:', error));
+
   </script>
 </body>
 
