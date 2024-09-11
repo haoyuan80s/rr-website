@@ -1,19 +1,5 @@
 {
   "applinks": {
-    "apps": [],
-    "details": [
-      {
-        "appID": "46RU75X585.com.ribbit2.RrArxiv",
-        "paths": [
-          "*"
-        ]
-      }
-    ]
-  }
-}
-
-{
-  "applinks": {
       "details": [
            {
              "appIDs": [ "46RU75X585.com.ribbit2.RrArxiv" ],
@@ -25,7 +11,7 @@
                },
                {
                   "/": "/paper/*",
-                  "comment": "Matches any URL with a path that starts with /buy/."
+                  "comment": "Matches any URL with a path that starts with /paper/."
                }
              ]
            }
