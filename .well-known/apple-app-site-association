@@ -1,0 +1,22 @@
+{
+  "applinks": {
+    "details": [
+      {
+        "appIDs": [
+          "46RU75X585.com.ribbit2.RrArxiv"
+        ],
+        "components": [
+          {
+            "/": "/paper/*",
+            "comment": "Matches any URL with a path that starts with /paper/."
+          }
+        ]
+      }
+    ]
+  },
+  "webcredentials": {
+    "apps": [
+      "46RU75X585.com.ribbit2.RrArxiv"
+    ]
+  }
+}
