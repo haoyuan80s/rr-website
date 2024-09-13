@@ -1,46 +1,63 @@
-<div class="modal-content">
-    <button class="close-button" onclick="closePopup('privacyModal')" title="Close">
-        <img src="assets/buttonClose.svg" alt="Close" style="width: 15px; height: 15px;">
-    </button>
-    <div class="modal-text">
-        <p style="font-family: 'Dosis', sans-serif;font-weight: 700; font-size: 20px;">Terms of Service</p>
-        <div>Hey there! 👋 By using our Ribbit Ribbit app, website, or podcast (we call them
-            "Services"), you're on
-            board
-            with
-            these
-            terms.
-        </div>
+<!DOCTYPE html>
+<html lang="en">
 
-        <div class="highlightNumber" style="padding: 10px 0;">Copyright Stuff 💼</div>
-        <div>We worked hard on this! Please don't copy, share, or tweak our stuff without asking. Thanks, you're
-            awesome!
-        </div>
-        <div class="highlightNumber" style="padding: 10px 0;">Updates? Yep! 🔄</div>
-        <div>We'll update the Services when needed. Keep things fresh by grabbing the latest version!</div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ribbit Ribbit - AI Paper Picks of the Day</title>
+    <meta name="description"
+        content="Discover top ArXiv papers in AI and machine learning daily with our fresh picks. Browse easily through tweet-sized summaries or listen on-the-go. Make learning engaging and accessible anytime, anywhere.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Dosis:wght@200..800&family=Roboto:wght@300..700&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
 
-        <div class="highlightNumber" style="padding: 10px 0;">Privacy First 🔐</div>
-        <div>We follow GDPR, CCPA, ePrivacy, and PECR to keep it safe. Just keep your device secure (no jailbreaks,
-            okay?). 😉
-        </div>
+<body>
+    <div id="headerId" class="header"></div>
+    <div id="termsId"></div>
+    <script>
+        fetch('https://ribbitribbit.co/header.html')
+            .then(response => response.text()) // Convert the response to text
+            .then(data => {
+                document.getElementById('headerId').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header.html:', error));
+        fetch('https://ribbitribbit.co/terms.html')
+            .then(response => response.text()) // Convert the response to text
+            .then(data => {
+                document.getElementById('termsId').innerHTML = data;
+                const closeButton = document.querySelector('.close-button');
+                if (closeButton) {
+                    closeButton.style.visibility = 'hidden'; // Hides the button but keeps the space
+                    // OR use display: none to remove it completely
+                    // closeButton.style.display = 'none';
+                }
+                const content = document.querySelector('.modal-content')
+                if (content) {
+                    content.style.width = '100%'; // Makes the modal full width
+                    content.style.height = '100%'; // Makes the modal full width
+                    content.style.top = null;
+                    content.style.left = null;
+                    content.style.position = null;
+                    content.style.paddingTop = "20px";
+                    content.style.maxHeight = "none";
+                    content.style.maxWidth = '95vw';
+                    content.style.alignItems = 'flex-start';  // Aligns content to the left vertically
+                }
+                const text = document.querySelector('.modal-text')
+                if (text) {
+                    text.style.width = '100%'; // Makes the modal full width
+                    text.style.height = '100%'; // Makes the modal full width
+                    text.style.top = null;
+                    text.style.left = null;
+                    text.style.position = null;
+                    text.style.overflowY = "hidden";
+                }
+            })
+            .catch(error => console.error('Error loading terms.html:', error));
+    </script>
+</body>
 
-        <div class="highlightNumber" style="padding: 10px 0;">Internet Things 🌐</div>
-        <div>Need internet for full functionality! And yep, your mobile provider might charge you if you're
-            using data. Double-check your plan, especially when roaming! 📱💸</div>
-
-        <div class="highlightNumber" style="padding: 10px 0;">Oops!</div>
-        <div>We try to keep things smooth, but if your phone dies or you lose connection, well, we can't
-            help with that! 🔋🤷</div>
-
-        <div class="highlightNumber" style="padding: 10px 0;">We Make Changes 📝</div>
-        <div>Sometimes, we update these terms. Keep an eye here for any changes. Still using the
-            Services? You're cool with the new terms!</div>
-
-        <div class="highlightNumber" style="padding: 10px 0;">Say Hi! ✉️</div>
-        <div>Questions? Ideas? Shoot us a message at <a href="mailto:admin@ribbitribbit.co">admin@ribbitribbit.co</a>.
-            We're all ears! 🐸👂</div>
-        <br>
-        <br>
-        <div>Effective from 2024-08-01.</div>
-    </div>
-</div>
+</html>

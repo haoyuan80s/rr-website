@@ -2423,12 +2423,12 @@
                 document.getElementById('headerId').innerHTML = data;
             })
             .catch(error => console.error('Error loading header.html:', error));
-        fetch('https://ribbitribbit.co/privacy.html')
+        fetch('https://ribbitribbit.co/terms.html')
             .then(response => response.text()) // Convert the response to text
             .then(data => {
                 document.getElementById('privacyModal').innerHTML = data;
             })
-            .catch(error => console.error('Error loading privacy.html:', error));
+            .catch(error => console.error('Error loading terms.html:', error));
     </script>
 </body>
 
