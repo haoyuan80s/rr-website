@@ -37,24 +37,10 @@
                 }
                 const content = document.querySelector('.modal-content')
                 if (content) {
-                    content.style.width = '100%'; // Makes the modal full width
-                    content.style.height = '100%'; // Makes the modal full width
-                    content.style.top = null;
-                    content.style.left = null;
-                    content.style.position = null;
+                    content.style.maxWidth = "600px";
                     content.style.paddingTop = "20px";
                     content.style.maxHeight = "none";
-                    content.style.maxWidth = '95%';
                     content.style.alignItems = 'flex-start';  // Aligns content to the left vertically
-                }
-                const text = document.querySelector('.modal-text')
-                if (text) {
-                    text.style.width = '100%'; // Makes the modal full width
-                    text.style.height = '100%'; // Makes the modal full width
-                    text.style.top = null;
-                    text.style.left = null;
-                    text.style.position = null;
-                    text.style.overflowY = "hidden";
                 }
             })
             .catch(error => console.error('Error loading terms.html:', error));

@@ -13,7 +13,6 @@ function ToggleDropDown() {
 }
 // Close the dropdown menu if the user clicks outside of it
 window.onclick = function (event) {
-    console.log("NOODLE", event.target);
     if (!event.target.matches('#menuButtonId') && !event.target.matches('.dropbtn')) {
         var dropdowns = document.getElementsByClassName("dropdown-content");
         var i;
@@ -40,10 +39,12 @@ function displayDuration() {
     }
 }
 // Attach event listener for when metadata is loaded
-audio.addEventListener('loadedmetadata', displayDuration);
-// Also, call displayDuration directly in case the metadata is already loaded
-if (audio.readyState >= 1) {
-    displayDuration();
+if (audio) {
+    audio.addEventListener('loadedmetadata', displayDuration);
+    // Also, call displayDuration directly in case the metadata is already loaded
+    if (audio.readyState >= 1) {
+        displayDuration();
+    }
 }
 
 function getSecondsFromTimeString(timeString) {
@@ -174,36 +175,40 @@ function togglePlayPause() {
     }
 }
 
-audio.addEventListener('timeupdate', function () {
-    if (!isDragging) {
-        var progress = (audio.currentTime / audio.duration) * 100;
-        progressBar.style.width = progress + '%';
-        progressCircle.style.left = progress + '%'; // Corrected reference
+if (audio) {
+    audio.addEventListener('timeupdate', function () {
+        if (!isDragging) {
+            var progress = (audio.currentTime / audio.duration) * 100;
+            progressBar.style.width = progress + '%';
+            progressCircle.style.left = progress + '%'; // Corrected reference
+            updateWithProgress();
+        }
+    });
+
+    audio.addEventListener('ended', function () {
+        playPauseImage.src = 'assets/buttonPlay.svg';
+        progressBar.style.width = '0%';
+        progressCircle.style.left = '0%';
+        audio.currentTime = 0;
         updateWithProgress();
-    }
-});
+    });
+}
 
-audio.addEventListener('ended', function () {
-    playPauseImage.src = 'assets/buttonPlay.svg';
-    progressBar.style.width = '0%';
-    progressCircle.style.left = '0%';
-    audio.currentTime = 0;
-    updateWithProgress();
-});
+if (progressCircle) {
+    // Mouse events
+    progressCircle.addEventListener('mousedown', function (event) {
+        isDragging = true;
+        document.addEventListener('mousemove', onMouseMove);
+        document.addEventListener('mouseup', onMouseUp);
+    });
 
-// Mouse events
-progressCircle.addEventListener('mousedown', function (event) {
-    isDragging = true;
-    document.addEventListener('mousemove', onMouseMove);
-    document.addEventListener('mouseup', onMouseUp);
-});
-
-// Touch events
-progressCircle.addEventListener('touchstart', function (event) {
-    isDragging = true;
-    document.addEventListener('touchmove', onTouchMove);
-    document.addEventListener('touchend', onTouchEnd);
-}, { passive: true });
+    // Touch events
+    progressCircle.addEventListener('touchstart', function (event) {
+        isDragging = true;
+        document.addEventListener('touchmove', onTouchMove);
+        document.addEventListener('touchend', onTouchEnd);
+    }, { passive: true });
+}
 
 function onMouseMove(event) {
     seek(event.clientX);
@@ -232,9 +237,11 @@ function onMouseUp() {
     document.removeEventListener('mouseup', onMouseUp);
 }
 
-progressCircle.addEventListener('dragstart', function (event) {
-    event.preventDefault();
-});
+if (progressCircle) {
+    progressCircle.addEventListener('dragstart', function (event) {
+        event.preventDefault();
+    });
+}
 
 function jumpToSeconds(seconds) {
     audio.currentTime = seconds;
@@ -286,24 +293,30 @@ timeTags.forEach(function (timeTag) {
     });
 });
 
-// Toggle dropdown visibility on button click
-selectButton.addEventListener('click', function () {
-    this.classList.toggle('open');
-});
-
-// Update button text and playback rate when an option is selected
-selectOptions.forEach(option => {
-    option.addEventListener('click', function () {
-        selectButton.textContent = this.getAttribute('data-value') + '\u00D7'; // Unicode for &times
-        audio.playbackRate = parseFloat(this.getAttribute('data-value'));
-        selectElement.value = this.getAttribute('data-value'); // Update hidden select for form submission
-        selectButton.classList.remove('open');
+if (selectButton) {
+    // Toggle dropdown visibility on button click
+    selectButton.addEventListener('click', function () {
+        this.classList.toggle('open');
     });
-});
+}
+
+if (selectOptions) {
+    // Update button text and playback rate when an option is selected
+    selectOptions.forEach(option => {
+        option.addEventListener('click', function () {
+            selectButton.textContent = this.getAttribute('data-value') + '\u00D7'; // Unicode for &times
+            audio.playbackRate = parseFloat(this.getAttribute('data-value'));
+            selectElement.value = this.getAttribute('data-value'); // Update hidden select for form submission
+            selectButton.classList.remove('open');
+        });
+    });
+}
 
 // Close the dropdown if the user clicks outside of it
 document.addEventListener('click', function (e) {
-    if (!selectButton.contains(e.target)) {
-        selectButton.classList.remove('open');
+    if (selectButton) {
+        if (!selectButton.contains(e.target)) {
+            selectButton.classList.remove('open');
+        }
     }
 });
