@@ -17,6 +17,7 @@
 <body>
     <div id="headerId" class="header"></div>
     <div id="termsId"></div>
+    <script src="script.js"></script>
     <script>
         fetch('https://ribbitribbit.co/header.html')
             .then(response => response.text()) // Convert the response to text
@@ -58,7 +59,6 @@
             })
             .catch(error => console.error('Error loading terms.html:', error));
     </script>
-    <script src="script.js"></script>
 </body>
 
 </html>
