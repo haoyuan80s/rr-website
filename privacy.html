@@ -2,13 +2,45 @@
     <button class="close-button" onclick="closePopup('privacyModal')" title="Close">
         <img src="assets/buttonClose.svg" alt="Close" style="width: 15px; height: 15px;">
     </button>
-    <div id="termTextId"></div>
+    <div class="modal-text">
+        <p style="font-family: 'Dosis', sans-serif;font-weight: 700; font-size: 20px;">Terms of Service</p>
+        <div>Hey there! 👋 By using our Ribbit Ribbit app, website, or podcast (we call them
+            "Services"), you're on
+            board
+            with
+            these
+            terms.
+        </div>
+
+        <div class="highlightNumber" style="padding: 10px 0;">Copyright Stuff 💼</div>
+        <div>We worked hard on this! Please don't copy, share, or tweak our stuff without asking. Thanks, you're
+            awesome!
+        </div>
+        <div class="highlightNumber" style="padding: 10px 0;">Updates? Yep! 🔄</div>
+        <div>We'll update the Services when needed. Keep things fresh by grabbing the latest version!</div>
+
+        <div class="highlightNumber" style="padding: 10px 0;">Privacy First 🔐</div>
+        <div>We follow GDPR, CCPA, ePrivacy, and PECR to keep it safe. Just keep your device secure (no jailbreaks,
+            okay?). 😉
+        </div>
+
+        <div class="highlightNumber" style="padding: 10px 0;">Internet Things 🌐</div>
+        <div>Need internet for full functionality! And yep, your mobile provider might charge you if you're
+            using data. Double-check your plan, especially when roaming! 📱💸</div>
+
+        <div class="highlightNumber" style="padding: 10px 0;">Oops!</div>
+        <div>We try to keep things smooth, but if your phone dies or you lose connection, well, we can't
+            help with that! 🔋🤷</div>
+
+        <div class="highlightNumber" style="padding: 10px 0;">We Make Changes 📝</div>
+        <div>Sometimes, we update these terms. Keep an eye here for any changes. Still using the
+            Services? You're cool with the new terms!</div>
+
+        <div class="highlightNumber" style="padding: 10px 0;">Say Hi! ✉️</div>
+        <div>Questions? Ideas? Shoot us a message at <a href="mailto:admin@ribbitribbit.co">admin@ribbitribbit.co</a>.
+            We're all ears! 🐸👂</div>
+        <br>
+        <br>
+        <div>Effective from 2024-08-01.</div>
+    </div>
 </div>
-<script>
-    fetch('https://www.ribbitribbit.co/terms.html')
-        .then(response => response.text()) // Convert the response to text
-        .then(data => {
-            document.getElementById('termTextId').innerHTML = data;
-        })
-        .catch(error => console.error('Error loading terms.html:', error));
-</script>
