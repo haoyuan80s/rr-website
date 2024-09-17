@@ -59,6 +59,13 @@ body {
     line-height: 1.0;
 }
 
+.highlightText {
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.0;
+}
+
 .today-container {
     width: 100%;
     text-align: center;
