@@ -124,7 +124,7 @@ function updateAudioTitle() {
         document.getElementById('audio-title').textContent = title;
         document.getElementById('audio-institutes').textContent = institutes;
     } else {
-        document.getElementById('audio-title').textContent = 'Listen and learn ^.^';
+        document.getElementById('audio-title').textContent = 'Hit play and learn on the go!';
         document.getElementById('audio-institutes').textContent = '';
     }
 }
