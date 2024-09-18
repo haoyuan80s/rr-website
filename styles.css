@@ -59,11 +59,13 @@ body {
     line-height: 1.0;
 }
 
-.highlightText {
-    font-family: 'Dosis', sans-serif;
-    font-size: 14px;
-    font-weight: 600;
-    line-height: 1.0;
+ul {
+    padding: 0;
+}
+
+li {
+    margin-bottom: 10px;
+    /* Adjusts space between items */
 }
 
 .today-container {
