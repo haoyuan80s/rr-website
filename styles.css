@@ -332,6 +332,25 @@ li {
     color: #000000;
 }
 
+.secondary-text {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.2;
+    font-weight: 300;
+    font-size: 15px;
+    color: #616161;
+}
+
+.launch-status {
+    background-color: #1FB36E;
+    border-radius: 5px;
+    font-size: 15px;
+    color: #ffffff;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 2px 5px;
+}
+
 .institute-text {
     line-height: 1.2;
     font-weight: 300;
