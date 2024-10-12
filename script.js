@@ -7,6 +7,7 @@ function formatSeconds(total_sec) {
     return minutes + ':' + seconds;
 }
 
+
 // The Dropdown Menu 
 function ToggleDropDown() {
     document.getElementById("myDropdown").classList.toggle("show");
@@ -320,3 +321,71 @@ document.addEventListener('click', function (e) {
         }
     }
 });
+
+function initializeFlatpickr(minDate, maxDate, defaultDate, enableDates) {
+    const enabledDatesObjects = enableDates.map(date => new Date(date + "T00:00:00"));
+    flatpickr("#selectedDate", {
+        minDate: new Date(minDate + "T00:00:00"),
+        maxDate: new Date(maxDate + "T00:00:00"),
+        defaultDate: new Date(defaultDate + "T00:00:00"),
+        enable: enabledDatesObjects,
+        dateFormat: "l. F j, Y",
+        onReady: function (selectedDates, dateStr, instance) {
+            instance.input.value = instance.formatDate(new Date(defaultDate + "T00:00:00"), "l. F j, Y");
+        },
+        onChange: function (selectedDates, dateStr, instance) {
+            const formattedDate = instance.formatDate(selectedDates[0], "Ymd");
+            window.location.href = `https://ribbitribbit.co/index_${formattedDate}.html`;
+        }
+    });
+}
+initializeFlatpickr(calendar_stats.mindate, calendar_stats.maxdate, daily_data.date, calendar_stats.enabled)
+
+function renderDailyStarter(date_str) {
+    const starter = document.getElementById('daily-stats');
+    starter.innerHTML = `Fresh Picks:
+    <span class="highlightNumber" style="font-size: 28px;">${daily_data.stats.num_pick}</span>
+    out of <span class="highlightNumber">${daily_data.stats.num_total}</span> AI papers`;
+}
+
+function renderTweets(date_str) {
+    const container = document.getElementById('tweets-container');
+    container.innerHTML = '';
+    daily_data.tweets.forEach(tweet => {
+        const tweetDiv = document.createElement('div');
+        tweetDiv.className = 'tweet';
+        tweetDiv.innerHTML = `
+            <div class="start-time-icon" title="Play from here">${tweet.startTime}</div>
+            <div class="tweet-content">
+                <div class="tweet-header">
+                    <a class="arxiv-id" href="${tweet.arxivLink}" target="_blank">@arXiv ${tweet.arxivId}</a>
+                    <span class="tweet-title">${tweet.title}</span>
+                </div>
+                <div class="institute-line">
+                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
+                    <span class="institute-text">${tweet.institute}</span>
+                </div>
+                <div class="primary-text">${tweet.text}</div>
+            </div>
+        `;
+        container.appendChild(tweetDiv);
+
+        const startTimeIcon = tweetDiv.querySelector('.start-time-icon');
+        startTimeIcon.addEventListener('click', () => {
+            console.log('Start Time: ' + tweet.startTime);
+            startSeconds = getSecondsFromTimeString(tweet.startTime);
+            jumpToSeconds(startSeconds);
+            if (audio.paused) {
+                audio.play();
+                playPauseImage.src = 'assets/buttonPause.svg';
+            }
+        });
+    });
+}
+
+function populateForDate(date_str) {
+    renderDailyStarter(date_str);
+    renderTweets(date_str);
+}
+
+document.addEventListener('DOMContentLoaded', populateForDate(calendar_stats.defaultdate));

@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -23,276 +22,16 @@
             <div style="height: 150px;"></div>
             <div class="page-title">DISCOVER RESEARCH THE FUN WAY</div>
             <div style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
-                <div class="institute-text" style="padding-top: 3px; line-height: 1.2;">Fresh Picks: 
-                    <span class="highlightNumber" style="font-size: 28px;">16</span> out of <span
-                    class="highlightNumber">33</span> AI papers
+                <div id="daily-stats" class="institute-text" style="padding-top: 3px; line-height: 1.2;">
                 </div>
                 <div class="institute-text" style="line-height: 1.2;">that were just released in arXiv on</div>
-                <div id="data-default-date" data-date="2024-10-04"></div>
+                <div id="data-default-date" data-date=2024-10-04></div>
                 <input type="text" id="selectedDate" style="text-decoration: underline;" />
             </div>
             <div style=" height: 80px;">
             </div>
         </div>
-
-
-        <div class="tweet" id="tweet0">
-            <div class="start-time-icon" title="Play from here">00:56</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01776" target="_blank">@arXiv 2410.01776</a>
-                    <span class="tweet-title">Climate Modeling Gets a Generative AI Makeover: Faster, More Accurate, and Less Expensive!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">Google</span>
-                </div>
-                <div class="primary-text">
-                    This research proposes a novel approach to downscaling climate model ensembles by combining dynamical downscaling with generative artificial intelligence. This differs from previous work by leveraging the strengths of both physics-based models and generative models to improve the accuracy and efficiency of downscaling.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet1">
-            <div class="start-time-icon" title="Play from here">01:18</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01804" target="_blank">@arXiv 2410.01804</a>
-                    <span class="tweet-title">Ellipsoids: The New Shape of Real-Time 3D Rendering</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">UC San Diego, Google</span>
-                </div>
-                <div class="primary-text">
-                    This paper introduces a new method for real-time 3D rendering that uses constant density ellipsoids as primitives, allowing for exact volume rendering without numerical quadrature. This differs from previous methods like 3D Gaussian Splatting (3DGS) which rely on approximations and suffer from popping artifacts.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet2">
-            <div class="start-time-icon" title="Play from here">01:46</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01796" target="_blank">@arXiv 2410.01796</a>
-                    <span class="tweet-title">Bellman Diffusion:  Deep Learning Meets the Real World, One Linear Step at a Time!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">University of Cambridge, Sony</span>
-                </div>
-                <div class="primary-text">
-                    This paper introduces Bellman Diffusion, a novel deep generative model (DGM) framework that addresses the limitations of existing DGMs in Markov Decision Processes (MDPs). Unlike traditional DGMs, Bellman Diffusion maintains linearity by directly modeling gradient and scalar fields, enabling efficient integration with the Bellman equation.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet3">
-            <div class="start-time-icon" title="Play from here">02:03</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01792" target="_blank">@arXiv 2410.01792</a>
-                    <span class="tweet-title">Can AI Really Think?  New Study Shows Even "Reasoning" Models Still Have a "Next Word" Hangover!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">Yale University, Princeton University</span>
-                </div>
-                <div class="primary-text">
-                    This research investigates whether a new language model, o1, optimized for reasoning, still exhibits the limitations associated with its origins in next-word prediction. The study compares o1's performance to previous LLMs on various tasks, focusing on the influence of output and task probability.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet4">
-            <div class="start-time-icon" title="Play from here">02:25</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01805" target="_blank">@arXiv 2410.01805</a>
-                    <span class="tweet-title">LLMs Get a Memory Makeover:  How Retaining Heads Help Big Models Think Big!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">Tsinghua University, Hong Kong University of Science and Technology</span>
-                </div>
-                <div class="primary-text">
-                    This research introduces a novel training-based approach for long-context LLM inference, called LOCRET, which utilizes retaining heads to predict the causal importance of each cache unit, enabling more accurate eviction within a fixed cache size. This differs from previous methods that rely on static-sized caches or quantization, which often struggle with memory bottlenecks as context length increases.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet5">
-            <div class="start-time-icon" title="Play from here">02:49</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01779" target="_blank">@arXiv 2410.01779</a>
-                    <span class="tweet-title">Neural Networks:  A Ring Circus of Global Optimizers!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">Meta</span>
-                </div>
-                <div class="primary-text">
-                    This research introduces a novel framework called CoGO (Composing Global Optimizers) that leverages algebraic structures within the weight space of 2-layer neural networks to construct global optimizers for reasoning tasks. Unlike previous work, CoGO analyzes the training dynamics and demonstrates that gradient descent solutions match the theoretical constructions.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet6">
-            <div class="start-time-icon" title="Play from here">03:13</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01767" target="_blank">@arXiv 2410.01767</a>
-                    <span class="tweet-title">Conformal Prediction Gets a Decision-Making Makeover!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">CMU, University of Amsterdam, Microsoft</span>
-                </div>
-                <div class="primary-text">
-                    This research introduces a new framework for conformal prediction that incorporates information about downstream decision problems, allowing for the generation of prediction sets that minimize a user-specified "decision loss" while maintaining statistical coverage guarantees. This differs from previous work on conformal prediction, which focused primarily on statistical coverage without considering the utility of the prediction sets for decision-making.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet7">
-            <div class="start-time-icon" title="Play from here">03:34</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01806" target="_blank">@arXiv 2410.01806</a>
-                    <span class="tweet-title">SambaMOTR:  Dancing Tracklets to Track Objects Better!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">ETH Zurich, Max Planck Institute for Informatics, INSAIT</span>
-                </div>
-                <div class="primary-text">
-                    This research introduces Samba, a novel set-of-sequences model that synchronizes multiple state-space models to jointly process tracklets. This approach allows for modeling long-range dependencies within tracklets and interdependencies among them, which is a significant improvement over previous methods that only considered individual tracklets.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet8">
-            <div class="start-time-icon" title="Play from here">04:04</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01756" target="_blank">@arXiv 2410.01756</a>
-                    <span class="tweet-title">Folding Tokens for Better Image Generation: A New Trick for AI Artists</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">Carnegie Mellon University, Adobe Research, MBZUAI</span>
-                </div>
-                <div class="primary-text">
-                    This research proposes ImageFolder, a new image tokenizer that uses product quantization to create spatially aligned tokens. Unlike previous methods, ImageFolder folds these tokens during autoregressive modeling, resulting in a shorter sequence length without sacrificing generation quality.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet9">
-            <div class="start-time-icon" title="Play from here">04:34</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01801" target="_blank">@arXiv 2410.01801</a>
-                    <span class="tweet-title">FabricDiffusion:  Turning 2D Clothes into 3D Dreams!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">Texas A&M University, CMU, Google</span>
-                </div>
-                <div class="primary-text">
-                    This research introduces FabricDiffusion, a method that transfers fabric textures from a single clothing image to 3D garments of arbitrary shapes. Unlike previous approaches that rely on 2D-to-3D texture mapping or depth-aware inpainting, FabricDiffusion extracts distortion-free, tileable texture materials that are subsequently mapped onto the UV space of the garment.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet10">
-            <div class="start-time-icon" title="Play from here">04:56</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01791" target="_blank">@arXiv 2410.01791</a>
-                    <span class="tweet-title">DreamGarden:  Growing Games From a Single Prompt, One Leaf at a Time!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">NYU, University of Texas at Austin, Microsoft</span>
-                </div>
-                <div class="primary-text">
-                    This research introduces DreamGarden, an AI system that uses a hierarchical planning approach to generate game environments from a single prompt. Unlike previous work that focuses on generating code or assets, DreamGarden orchestrates multiple specialized AI agents to create a complete simulation.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet11">
-            <div class="start-time-icon" title="Play from here">05:15</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01803" target="_blank">@arXiv 2410.01803</a>
-                    <span class="tweet-title">KANs: The Neural Network That Doesn't Get Stuck in a Rut!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">Caltech</span>
-                </div>
-                <div class="primary-text">
-                    This research compares the performance of Kolmogorov-Arnold Networks (KANs) with Multi-Layer Perceptrons (MLPs) in terms of their ability to learn high-frequency components. It finds that KANs are less biased towards low frequencies than MLPs, suggesting they may be better suited for scientific computing applications.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet12">
-            <div class="start-time-icon" title="Play from here">05:42</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01798" target="_blank">@arXiv 2410.01798</a>
-                    <span class="tweet-title">Windowed MAPF:  No More Deadlock Drama!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">CMU</span>
-                </div>
-                <div class="primary-text">
-                    This research introduces a new framework called WinC-MAPF, which guarantees completeness for windowed MAPF solvers. Unlike previous windowed approaches that often get stuck in deadlock, WinC-MAPF uses heuristic updates and agent independence to ensure all agents reach their goals.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet13">
-            <div class="start-time-icon" title="Play from here">06:01</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01771" target="_blank">@arXiv 2410.01771</a>
-                    <span class="tweet-title">Binary Search Gets a Bayesian Makeover:  Faster, Smarter, and Less Spammy!</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">University of Cambridge</span>
-                </div>
-                <div class="primary-text">
-                    This paper introduces Bayesian Binary Search (BBS), a probabilistic variant of the classic binary search algorithm. Unlike traditional binary search, BBS leverages machine learning techniques to estimate the probability density of the search space, guiding the search process based on the learned distribution.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet14">
-            <div class="start-time-icon" title="Play from here">06:29</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01769" target="_blank">@arXiv 2410.01769</a>
-                    <span class="tweet-title">LLMs:  They're Not Just Memorizing, They're Getting Smarter (But Still Have a Valley to Cross)</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">Harvard University, MIT</span>
-                </div>
-                <div class="primary-text">
-                    This research introduces SCYLLA, a dynamic evaluation framework that measures the generalization abilities of LLMs by assessing their performance on both in-distribution (ID) and out-of-distribution (OOD) data across varying levels of task complexity. This approach helps disentangle generalization from memorization, which is a key distinction from previous work.
-                </div>
-            </div>
-        </div>
-        <div class="tweet" id="tweet15">
-            <div class="start-time-icon" title="Play from here">06:52</div>
-            <div class="tweet-content">
-                <div class="tweet-header">
-                    <a class="arxiv-id" href="https://arxiv.org/abs/2410.01763" target="_blank">@arXiv 2410.01763</a>
-                    <span class="tweet-title">Stereotypes Stick: How Social Coordination Creates and Perpetuates Bias</span>
-                </div>
-                <div class="institute-line">
-                    <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
-                    <span class="institute-text">University of Toronto</span>
-                </div>
-                <div class="primary-text">
-                    This research uses a computational model of social coordination to demonstrate how pre-existing expectations about how others will behave can create a feedback loop that reinforces stereotypes, even in the absence of biased motivations. This approach differs from previous work that focused on explaining stereotypes through biased motivations or cognitive limitations.
-                </div>
-            </div>
-        </div>
-
+        <div id="tweets-container"></div>
         <div
             style="padding: 50px 0; text-align: center; margin: 5px 0; font-weight: 300; font-size: 10px; color: #000000;">
             Opening music
@@ -301,14 +40,14 @@
         <div style="height: 50px;"></div>
     </div>
 
-    <footer class="player-footer">
+    <footer id="player-footer-id" class="player-footer">
         <div class="player-detail-hidden-on-small-screen">
             <div id="audio-title" class="tweet-title-small">Hit play and learn on the go!</div>
             <div style="height: 2px;"></div>
             <div id="audio-institutes" class="institute-text-small"></div>
         </div>
         <div class="control-panel">
-            <div class="control-horizontal">
+            <div id="control-button-group" class="control-horizontal">
                 <div id="playSpeedButton" title="Adjust speed">
                     <div id="selectedSpeed">1&times;</div>
                     <div class="speedMenuItems">
@@ -360,21 +99,23 @@
         </div>
     </footer>
     <div id="privacyModal" class="modal"></div>
-    <script src="script.js"></script>
-    <script src="calendar.js"></script>    
     <script>
         fetch('https://ribbitribbit.co/header.html')
-            .then(response => response.text()) // Convert the response to text
+            .then(response => response.text())
             .then(data => {
                 document.getElementById('headerId').innerHTML = data;
             })
             .catch(error => console.error('Error loading header.html:', error));
         fetch('https://ribbitribbit.co/terms.html')
-            .then(response => response.text()) // Convert the response to text
+            .then(response => response.text())
             .then(data => {
                 document.getElementById('privacyModal').innerHTML = data;
             })
             .catch(error => console.error('Error loading terms.html:', error));
     </script>
+    <script src="data_20241004.js"></script>
+    <script src="calendar.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
