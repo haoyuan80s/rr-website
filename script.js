@@ -59,7 +59,7 @@ function getSecondsFromTimeString(timeString) {
 }
 
 function getStartSeconds(tweet) {
-    const timeString = tweet.querySelector('.start-time-icon').textContent.replace(/[▶·]/g, '').trim();
+    const timeString = tweet.querySelector('.start-time-icon').textContent;
     return getSecondsFromTimeString(timeString);
 }
 
@@ -358,13 +358,13 @@ function renderTweets(date_str) {
                     <img class="tweet-image" src="https://d2irtorupa9e8g.cloudfront.net/${tweet["image-path"]}" alt="Tweet Image">
                 </div>
                 <div class="primary-text-gray">
-                    <a class="start-time-icon" title="Play from here"><span class="play-image">&#9654;</span> ${tweet.startTime}<span class="bold-dot">&middot;</span></a>${tweet.text}
+                    <a class="start-time-button"><img class="play-image" src="assets/buttonPlayFrom.svg"><span class="start-time-icon">${tweet.startTime}</span><span class="bold-dot">&middot;</span></a>${tweet.text}
                 </div>
             </div>
         `;
         container.appendChild(tweetDiv);
 
-        const startTimeIcon = tweetDiv.querySelector('.start-time-icon');
+        const startTimeIcon = tweetDiv.querySelector('.start-time-button');
         startTimeIcon.addEventListener('click', () => {
             let startSeconds = getSecondsFromTimeString(tweet.startTime);
             jumpToSeconds(startSeconds);
