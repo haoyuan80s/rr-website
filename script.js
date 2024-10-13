@@ -341,6 +341,11 @@ function renderTweets(date_str) {
     daily_data.tweets.forEach(tweet => {
         const tweetDiv = document.createElement('div');
         tweetDiv.className = 'tweet';
+
+        let image_block = '';
+        if (tweet["image-path"]) {
+            image_block = `<div class="image-block"><img class="tweet-image" src="https://d2irtorupa9e8g.cloudfront.net/${tweet["image-path"]}" alt="Tweet Image"></div>`
+        }
         tweetDiv.innerHTML = `
             <div class="tweet-content">
                 <div class="tweet-header">
@@ -354,14 +359,14 @@ function renderTweets(date_str) {
                     <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
                     <span class="institute-text">${tweet.institute}</span>
                 </div>
-                <div class="image-block">
-                    <img class="tweet-image" src="https://d2irtorupa9e8g.cloudfront.net/${tweet["image-path"]}" alt="Tweet Image">
-                </div>
+                ${image_block}
+                <div style=" height: 6px;"></div>
                 <div class="primary-text-gray">
                     <a class="start-time-button"><img class="play-image" src="assets/buttonPlayFrom.svg"><span class="start-time-icon">${tweet.startTime}</span><span class="bold-dot">&middot;</span></a>${tweet.text}
                 </div>
             </div>
         `;
+
         container.appendChild(tweetDiv);
 
         const startTimeIcon = tweetDiv.querySelector('.start-time-button');
