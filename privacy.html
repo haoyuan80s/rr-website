@@ -4,6 +4,130 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ribbit Ribbit - New Features and Bug Fixes</title>
+    <meta name="description" content="Vote for the feature or bug fix that you most wanna see.">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <link rel="icon" href="assets/frogFavicon.png" type="image/x-icon">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+</head>
+
+<body>
+    <div id="headerId" class="header"></div>
+    <div class="container">
+        <div id="topblock" style="padding-top: 3px; line-height: 1.2;">
+            <div style="height: 150px;"></div>
+            <div class="page-title">
+                TERMS OF SERVICE
+            </div>
+            <div style="height: 5px;"></div>
+            <div class="institute-text">
+                Hey there! 👋 By using our Ribbit Ribbit app, website,
+                or podcast (we call them
+                "Services"), you're on board with these terms.
+            </div>
+            <div style="height: 80px;"></div>
+        </div>
+        <div class="cardblockv">
+            <div class="highlightText" style="padding: 5px 5px;">Copyright Stuff 💼</div>
+            <div style="padding: 5px 5px;">We worked hard on this! Please don't copy, share, or tweak our stuff without
+                asking. Thanks, you're awesome!
+            </div>
+        </div>
+        <div class="cardblockv">
+            <div class="highlightText" style="padding: 5px 5px;">Updates? Yep! 🔄</div>
+            <div style="padding: 5px 5px;">We'll update the Services when needed. Keep things fresh by grabbing the
+                latest version!
+            </div>
+        </div>
+        <div class="cardblockv">
+            <div class="highlightText" style="padding: 5px 5px;">Privacy First 🛡️</div>
+            <div style="padding: 5px 5px;">We care about your privacy (like, a lot), so here's the lowdown on how we
+                handle your data in the
+                app:
+                <ul>
+                    <li>
+                        Browsing Around: Feel free to explore and search through all the
+                        papers you want without
+                        logging in. You're totally anonymous here!
+                    </li>
+                    <li>
+                        Time to Interact: Want to vote, leave a comment, save a paper, or
+                        doodle all over a paper
+                        PDF? You'll need to log in for those. We keep things simple with Google and Apple login.
+                    </li>
+                    <li>
+                        Login Stuff: When you log in, we only get an encrypted user ID
+                        from
+                        Google or Apple so we can
+                        keep your account consistent. That's it. We're not interested in your email or anything else
+                        personal.
+                    </li>
+                </ul>
+                We follow GDPR, CCPA, ePrivacy, and PECR to keep it safe. Just keep your device secure (no
+                jailbreaks,
+                okay?). 😉
+            </div>
+        </div>
+        <div class="cardblockv">
+            <div class="highlightText" style="padding: 5px 5px;">Internet Things 🌐</div>
+            <div style="padding: 5px 5px;">Need internet for full functionality! And yep, your mobile provider might
+                charge you if you're using data. Double-check your plan, especially when roaming! 📱💸
+            </div>
+        </div>
+        <div class="cardblockv">
+            <div class="highlightText" style="padding: 5px 5px;">Oops!</div>
+            <div style="padding: 5px 5px;">We try to keep things smooth, but if your phone dies or you lose connection,
+                well, we can't help with that! 🔋🤷
+            </div>
+        </div>
+        <div class="cardblockv">
+            <div class="highlightText" style="padding: 5px 5px;">We Make Changes 📝</div>
+            <div style="padding: 5px 5px;">Sometimes, we update these terms. Keep an eye here for any changes. Still
+                using the Services? You're cool with the new terms!
+            </div>
+        </div>
+        <div class="cardblockv">
+            <div class="highlightText" style="padding: 5px 5px;">Say Hi! ✉️</div>
+            <div style="padding: 5px 5px;">Questions? Ideas? Shoot us a message at <a
+                    href="mailto:admin@ribbitribbit.co">admin@ribbitribbit.co</a>.
+                We're all ears! 🐸👂
+            </div>
+        </div>
+        <br>
+        <br>
+        <div>Effective from 2024-08-01.</div>
+        <div style="height: 150px;"></div>
+    </div>
+    <div id="privacyModal" class="modal"></div>
+    <script src="script.js"></script>
+    <script>
+        fetch('https://ribbitribbit.co/header.html')
+            .then(response => response.text()) // Convert the response to text
+            .then(data => {
+                document.getElementById('headerId').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header.html:', error));
+        fetch('https://ribbitribbit.co/terms.html')
+            .then(response => response.text()) // Convert the response to text
+            .then(data => {
+                document.getElementById('privacyModal').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading terms.html:', error));
+    </script>
+</body>
+
+</html>
+<!-- 
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ribbit Ribbit - Discover research the fun way!</title>
     <meta name="description"
         content="Discover top ArXiv papers in AI and machine learning daily with our fresh picks. Browse easily through tweet-sized summaries or listen on-the-go. Make learning engaging and accessible anytime, anywhere.">
@@ -16,7 +140,76 @@
 
 <body>
     <div id="headerId" class="header"></div>
-    <div id="termsId"></div>
+    <div id="container">
+        <div id="topblock" style="padding-top: 3px; line-height: 1.2;">
+            <div style="height: 150px;"></div>
+            <div class="page-title">
+                TERMS OF SERVICE
+            </div>
+            <div style="height: 5px;"></div>
+            <div class="institute-text" style="max-width: 600px;">Hey there! 👋 By using our Ribbit Ribbit app, website,
+                or podcast (we call them
+                "Services"), you're on board with these terms.</div>
+            <div style="height: 80px;"></div>
+        </div>
+        <div>
+            <div class="cardblock">
+                <div class="highlightText" style="padding: 10px 0;">Copyright Stuff 💼</div>
+                <div>We worked hard on this! Please don't copy, share, or tweak our stuff without asking. Thanks, you're
+                    awesome!
+                </div>
+            </div>
+            <div class="highlightText" style="padding: 10px 0;">Updates? Yep! 🔄</div>
+            <div>We'll update the Services when needed. Keep things fresh by grabbing the latest version!</div>
+
+            <div class="highlightText" style="padding: 10px 0;">Privacy First 🛡️</div>
+            <div>We care about your privacy (like, a lot), so here's the lowdown on how we handle your data in the
+                app:
+                <ul>
+                    <li>
+                        Browsing Around: Feel free to explore and search through all the
+                        papers you want without
+                        logging in. You're totally anonymous here!
+                    </li>
+                    <li>
+                        Time to Interact: Want to vote, leave a comment, save a paper, or
+                        doodle all over a paper
+                        PDF? You'll need to log in for those. We keep things simple with Google and Apple login.
+                    </li>
+                    <li>
+                        Login Stuff: When you log in, we only get an encrypted user ID
+                        from
+                        Google or Apple so we can
+                        keep your account consistent. That's it. We're not interested in your email or anything else
+                        personal.
+                    </li>
+                </ul>
+                We follow GDPR, CCPA, ePrivacy, and PECR to keep it safe. Just keep your device secure (no
+                jailbreaks,
+                okay?). 😉
+            </div>
+
+            <div class="highlightText" style="padding: 10px 0;">Internet Things 🌐</div>
+            <div>Need internet for full functionality! And yep, your mobile provider might charge you if you're
+                using data. Double-check your plan, especially when roaming! 📱💸</div>
+
+            <div class="highlightText" style="padding: 10px 0;">Oops!</div>
+            <div>We try to keep things smooth, but if your phone dies or you lose connection, well, we can't
+                help with that! 🔋🤷</div>
+
+            <div class="highlightText" style="padding: 10px 0;">We Make Changes 📝</div>
+            <div>Sometimes, we update these terms. Keep an eye here for any changes. Still using the
+                Services? You're cool with the new terms!</div>
+
+            <div class="highlightText" style="padding: 10px 0;">Say Hi! ✉️</div>
+            <div>Questions? Ideas? Shoot us a message at <a
+                    href="mailto:admin@ribbitribbit.co">admin@ribbitribbit.co</a>.
+                We're all ears! 🐸👂</div>
+            <br>
+            <br>
+            <div>Effective from 2024-08-01.</div>
+        </div>
+    </div>
     <script src="script.js"></script>
     <script>
         fetch('https://ribbitribbit.co/header.html')
@@ -25,26 +218,7 @@
                 document.getElementById('headerId').innerHTML = data;
             })
             .catch(error => console.error('Error loading header.html:', error));
-        fetch('https://ribbitribbit.co/terms.html')
-            .then(response => response.text()) // Convert the response to text
-            .then(data => {
-                document.getElementById('termsId').innerHTML = data;
-                const closeButton = document.querySelector('.close-button');
-                if (closeButton) {
-                    closeButton.style.visibility = 'hidden'; // Hides the button but keeps the space
-                    // OR use display: none to remove it completely
-                    // closeButton.style.display = 'none';
-                }
-                const content = document.querySelector('.modal-content')
-                if (content) {
-                    content.style.maxWidth = "600px";
-                    content.style.paddingTop = "20px";
-                    content.style.maxHeight = "none";
-                    content.style.alignItems = 'flex-start';  // Aligns content to the left vertically
-                }
-            })
-            .catch(error => console.error('Error loading terms.html:', error));
     </script>
 </body>
 
-</html>
+</html> -->

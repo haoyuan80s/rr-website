@@ -281,20 +281,6 @@ const selectButton = document.querySelector('#selectedSpeed');
 const selectOptions = document.querySelectorAll('.speedMenuItems div');
 const selectElement = document.getElementById('speedOptionsHidden');
 
-// const timeTags = document.querySelectorAll('.start-time-icon');
-// // Loop through each element and add a click event listener
-// timeTags.forEach(function (timeTag) {
-//     timeTag.addEventListener('click', function () {
-//         console.log("NOODLE", timeTag.textContent)
-//         startSeconds = getSecondsFromTimeString(timeTag.textContent);
-//         jumpToSeconds(startSeconds);
-//         if (audio.paused) {
-//             audio.play();
-//             playPauseImage.src = 'assets/buttonPause.svg';
-//         }
-//     });
-// });
-
 if (selectButton) {
     // Toggle dropdown visibility on button click
     selectButton.addEventListener('click', function () {

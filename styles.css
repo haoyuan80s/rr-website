@@ -16,6 +16,8 @@ body {
 
 body {
     font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     background-color: #ffffff;
     color: #000000;
     margin: 0;
@@ -39,13 +41,15 @@ body {
 .flatpickr-calendar {
     font-family: "Source Sans 3", sans-serif;
     border-radius: 11px;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 .flatpickr-day,
 .flatpickr-weekdays {
     font-family: "Source Sans 3", sans-serif;
     font-size: 16px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 #externalLinkButtons {
@@ -91,18 +95,18 @@ li {
     color: white;
     padding: 10px 0;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .today-date-large {
     font-size: 60px;
-    font-weight: bold;
+    font-weight: 400;
     padding: 10px 0;
 }
 
 .today-date-details {
     font-size: 22px;
-    font-weight: bold;
+    font-weight: 400;
     display: flex;
     justify-content: space-between;
     padding: 10px 20px;
@@ -122,19 +126,13 @@ li {
     color: white;
     padding: 10px 0;
     font-size: 18px;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 .today-picks {
     font-size: 50px;
-    font-weight: bold;
+    font-weight: 400;
     padding: 10px 0;
-}
-
-.today-papers {
-    font-size: 18px;
-    font-weight: bold;
-    padding-bottom: 10px;
 }
 
 
@@ -153,8 +151,6 @@ li {
 
 .header-title {
     flex-grow: 1;
-    /* font-size: 1.5em;
-    font-weight: bold; */
     color: #000000;
 }
 
@@ -183,8 +179,8 @@ li {
     position: absolute;
     background-color: var(--footer-color);
     padding: 3px 0;
-    font-weight: 300;
-    font-size: 14px;
+    font-weight: 400;
+    font-size: 16px;
     min-width: 220px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
@@ -231,15 +227,6 @@ li {
     padding: 10px;
 }
 
-.notification-text {
-    font-family: 'Amatic SC', cursive;
-    font-weight: 700;
-    font-size: 24px;
-    color: #000000;
-    margin-left: 20px;
-    margin-right: 20px;
-}
-
 .current-date {
     font-size: 1.2em;
     color: #555555;
@@ -255,6 +242,34 @@ li {
     margin-bottom: 12px;
     margin-left: 2px;
     margin-right: 2px;
+}
+
+.cardblock {
+    display: flex;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    line-height: 1.2;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    scroll-margin-top: var(--header-height);
+    margin-bottom: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
+    max-width: 600px;
+}
+
+.cardblockv {
+    display: flex-column;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    line-height: 1.2;
+    padding: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+    scroll-margin-top: var(--header-height);
+    margin-bottom: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
+    max-width: 600px;
 }
 
 .tweet:last-child {
@@ -280,7 +295,7 @@ li {
     font-family: "Source Sans 3", sans-serif;
     font-weight: 600;
     font-size: 17px;
-    line-height: 0.9;
+    line-height: 1.0;
     color: #000000;
     padding-top: 10px;
 }
@@ -348,7 +363,7 @@ li {
 
 .institute-line {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     margin-bottom: 2px;
     margin-top: 2px;
 }
@@ -363,7 +378,7 @@ li {
 .arxiv-icon {
     width: 16px;
     height: 16px;
-    padding-bottom: 1px;
+    padding-top: 3px;
     margin-right: 5px;
 }
 
@@ -383,14 +398,6 @@ li {
     color: #000000;
 }
 
-.secondary-text {
-    font-family: "Source Sans 3", sans-serif;
-    line-height: 1.2;
-    font-weight: 400;
-    font-size: 15px;
-    color: #616161;
-}
-
 .launch-status {
     background-color: #1FB36E;
     border-radius: 5px;
@@ -399,14 +406,11 @@ li {
     font-family: "Source Sans 3", sans-serif;
     font-size: 13px;
     font-weight: 400;
-    padding: 2px 5px;
+    padding: 3px 5px;
 }
 
 .play-image {
     font-size: 13px;
-    /* border-radius: 2.5px;
-    padding: 1px 2px; */
-    /* border: 1px solid black; */
     margin-bottom: 2px;
 }
 
@@ -578,9 +582,8 @@ button {
 }
 
 #progressTime {
-    font-size: 14px;
-    font-weight: 300;
-    font-size: 13px;
+    font-size: 15px;
+    font-weight: 400;
 }
 
 /* Modal (popup) container */
@@ -618,20 +621,16 @@ button {
     border-radius: 10px;
 }
 
-.modal-text {
-    background-color: #ffffff;
-    /* margin: 15% auto; */
-    margin: auto auto;
-    /* Centered, with some space from the top */
-    padding: 0 20px;
-    /* padding-bottom: 20px; */
-    margin-bottom: 20px;
-    border: none;
-    overflow-y: auto;
-    /* Enable vertical scrolling if content overflows */
-    font-family: "Source Sans 3", sans-serif;
-    font-weight: 400;
-    font-size: 15px;
+.terms-text {
+    width: 100%;
+    max-width: 600px;
+    display: flex-column;
+    background-color: #FFFFFF;
+    border-radius: 10px;
+    padding: 10px;
+    margin-bottom: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 /* Close button */
@@ -678,7 +677,7 @@ button {
     position: absolute;
     background-color: var(--footer-color);
     padding: 3px 0;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 14px;
     min-width: 100px;
     border-radius: 5px;
@@ -705,27 +704,14 @@ button {
 }
 
 @media (max-width: 600px) {
-    .container {
-        padding: 10px;
-    }
-
-    .tweet {
-        padding: 10px;
-    }
-
     .page-title {
         font-family: "Source Sans 3", sans-serif;
         font-size: 22px;
         font-weight: 600;
     }
 
-    .primary-text {
-        line-height: 1.15;
-        font-size: 15px;
-    }
-
     .tweet-title {
-        font-weight: 700;
+        font-weight: 600;
         font-size: 17px;
         line-height: 1;
         margin-top: 6px;
@@ -733,11 +719,11 @@ button {
 
     .institute-text {
         line-height: 1.15;
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .arxiv-id {
-        font-size: 15px;
+        font-size: 16px;
     }
 
     .player-detail-hidden-on-small-screen {
