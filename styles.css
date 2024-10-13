@@ -2,7 +2,7 @@ html,
 
 :root {
     --header-height: 60px;
-    --footer-height: 70px;
+    --footer-height: 65px;
     /* --footer-color: #f8f8f8; */
     --footer-color: #ffffff;
 }
@@ -555,7 +555,7 @@ button {
     justify-content: flex-start;
     width: 100%;
     padding-right: 20px;
-    padding-bottom: 10px;
+    padding-bottom: 5px;
 }
 
 .control-horizontal {
@@ -565,12 +565,6 @@ button {
     justify-content: center;
     padding: 5px 0;
 }
-
-/* .control-horizontal {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-} */
 
 #progressContainer {
     flex-grow: 1;
