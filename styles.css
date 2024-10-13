@@ -552,9 +552,10 @@ button {
 .control-panel {
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* Center-align children vertically */
+    justify-content: flex-start;
     width: 100%;
+    padding-right: 20px;
+    padding-bottom: 10px;
 }
 
 .control-horizontal {
@@ -562,7 +563,7 @@ button {
     width: 100%;
     align-items: center;
     justify-content: center;
-    padding: 5px 0;
+    padding: 0 0;
 }
 
 /* .control-horizontal {
@@ -755,5 +756,11 @@ button {
     .externalLinkMenuItem {
         display: flex;
         align-items: center;
+    }
+
+    .control-panel {
+        width: 100%;
+        padding-left: 15px;
+        padding-right: 15px;
     }
 }
