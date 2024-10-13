@@ -59,7 +59,7 @@ function getSecondsFromTimeString(timeString) {
 }
 
 function getStartSeconds(tweet) {
-    const timeString = tweet.querySelector('.start-time-icon').textContent;
+    const timeString = tweet.querySelector('.start-time-icon').textContent.replace(/[▶·]/g, '').trim();
     return getSecondsFromTimeString(timeString);
 }
 
@@ -281,18 +281,19 @@ const selectButton = document.querySelector('#selectedSpeed');
 const selectOptions = document.querySelectorAll('.speedMenuItems div');
 const selectElement = document.getElementById('speedOptionsHidden');
 
-const timeTags = document.querySelectorAll('.start-time-icon');
-// Loop through each element and add a click event listener
-timeTags.forEach(function (timeTag) {
-    timeTag.addEventListener('click', function () {
-        startSeconds = getSecondsFromTimeString(timeTag.textContent);
-        jumpToSeconds(startSeconds);
-        if (audio.paused) {
-            audio.play();
-            playPauseImage.src = 'assets/buttonPause.svg';
-        }
-    });
-});
+// const timeTags = document.querySelectorAll('.start-time-icon');
+// // Loop through each element and add a click event listener
+// timeTags.forEach(function (timeTag) {
+//     timeTag.addEventListener('click', function () {
+//         console.log("NOODLE", timeTag.textContent)
+//         startSeconds = getSecondsFromTimeString(timeTag.textContent);
+//         jumpToSeconds(startSeconds);
+//         if (audio.paused) {
+//             audio.play();
+//             playPauseImage.src = 'assets/buttonPause.svg';
+//         }
+//     });
+// });
 
 if (selectButton) {
     // Toggle dropdown visibility on button click
@@ -355,25 +356,31 @@ function renderTweets(date_str) {
         const tweetDiv = document.createElement('div');
         tweetDiv.className = 'tweet';
         tweetDiv.innerHTML = `
-            <div class="start-time-icon" title="Play from here">${tweet.startTime}</div>
             <div class="tweet-content">
                 <div class="tweet-header">
-                    <a class="arxiv-id" href="${tweet.arxivLink}" target="_blank">@arXiv ${tweet.arxivId}</a>
                     <span class="tweet-title">${tweet.title}</span>
+                </div>
+                <div class="institute-line">
+                    <img class="arxiv-icon" src="assets/buttonArxiv.svg" alt="Arxiv link">
+                    <a class="arxiv-id" href="${tweet.arxivLink}" target="_blank">arXiv ${tweet.arxivId}</a>
                 </div>
                 <div class="institute-line">
                     <img class="institute-icon" src="assets/buttonInstitute.svg" alt="Institute Icon">
                     <span class="institute-text">${tweet.institute}</span>
                 </div>
-                <div class="primary-text">${tweet.text}</div>
+                <div class="image-block">
+                    <img class="tweet-image" src="https://d2irtorupa9e8g.cloudfront.net/${tweet["image-path"]}" alt="Tweet Image">
+                </div>
+                <div class="primary-text-gray">
+                    <a class="start-time-icon" title="Play from here"><span class="play-image">&#9654;</span> ${tweet.startTime}<span class="bold-dot">&middot;</span></a>${tweet.text}
+                </div>
             </div>
         `;
         container.appendChild(tweetDiv);
 
         const startTimeIcon = tweetDiv.querySelector('.start-time-icon');
         startTimeIcon.addEventListener('click', () => {
-            console.log('Start Time: ' + tweet.startTime);
-            startSeconds = getSecondsFromTimeString(tweet.startTime);
+            let startSeconds = getSecondsFromTimeString(tweet.startTime);
             jumpToSeconds(startSeconds);
             if (audio.paused) {
                 audio.play();

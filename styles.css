@@ -15,7 +15,7 @@ body {
 }
 
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     background-color: #ffffff;
     color: #000000;
     margin: 0;
@@ -25,9 +25,9 @@ body {
 }
 
 #selectedDate {
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
-    font-weight: 300;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
     line-height: 0.9;
     width: 250px;
     border-radius: 5px;
@@ -37,14 +37,15 @@ body {
 }
 
 .flatpickr-calendar {
-    font-family: 'Dosis', sans-serif;
-    border-radius: 10px;
+    font-family: "Source Sans 3", sans-serif;
+    border-radius: 11px;
 }
 
 .flatpickr-day,
 .flatpickr-weekdays {
-    font-family: 'Dosis', sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-size: 16px;
+    font-weight: 600;
 }
 
 #externalLinkButtons {
@@ -53,23 +54,23 @@ body {
 }
 
 .highlightNumber {
-    font-family: 'Dosis', sans-serif;
-    font-size: 16px;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 17px;
     font-weight: 700;
     line-height: 1.0;
 }
 
 .highlightText {
-    font-family: 'Dosis', sans-serif;
-    font-size: 16px;
-    font-weight: 700;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 17px;
+    font-weight: 600;
     line-height: 1.0;
 }
 
 .page-title {
-    font-family: 'Dosis', sans-serif;
-    font-size: 26px;
-    font-weight: 700;
+    font-family: "Source Sans 3", sans-serif;
+    font-size: 27px;
+    font-weight: 600;
 }
 
 li {
@@ -80,7 +81,7 @@ li {
 .today-container {
     width: 100%;
     text-align: center;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     background-color: white;
     overflow: hidden;
 }
@@ -216,7 +217,7 @@ li {
 .container {
     width: 100%;
     max-width: 600px;
-    padding: 20px;
+    padding: 10px;
     box-sizing: border-box;
 }
 
@@ -246,9 +247,14 @@ li {
 
 .tweet {
     display: flex;
+    background-color: #FFFFFF;
+    border-radius: 10px;
     padding: 10px;
-    border-bottom: 0.5px solid #000000;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
     scroll-margin-top: var(--header-height);
+    margin-bottom: 12px;
+    margin-left: 2px;
+    margin-right: 2px;
 }
 
 .tweet:last-child {
@@ -256,9 +262,23 @@ li {
     border-bottom: none;
 }
 
+.image-block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.tweet-image {
+    height: 150px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    margin: 8px;
+    margin-bottom: 15px;
+}
+
 .tweet-title {
-    font-family: 'Dosis', sans-serif;
-    font-weight: 700;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 600;
     font-size: 17px;
     line-height: 0.9;
     color: #000000;
@@ -266,9 +286,9 @@ li {
 }
 
 .tweet-title-small {
-    font-family: 'Dosis', sans-serif;
-    font-weight: 700;
-    font-size: 15px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
     line-height: 1.25;
     color: #000000;
     display: -webkit-box;
@@ -285,23 +305,33 @@ li {
 }
 
 .start-time-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* width: 46px; */
-    height: 22px;
-    border-radius: 8px;
-    background-color: #1FB36E;
-    color: #ffffff;
-    font-weight: 300;
-    padding: 0px 3px;
-    margin-right: 10px;
-    font-size: 13px;
+    font-family: "Source Sans 3", sans-serif;
+    color: #000000;
+    font-weight: 400;
+    font-size: 16px;
     cursor: pointer;
+}
+
+.primary-text-gray {
+    font-family: "Source Sans 3", sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 16px;
+    color: #636366;
+}
+
+.bold-dot {
+    font-weight: bold;
+    font-size: 15px;
+    margin-left: 7px;
+    margin-right: 7px;
+    display: inline-block;
+    transform: scale(1.5);
 }
 
 .tweet-content {
     flex: 1;
+    padding: 3px 5px;
 }
 
 .tweet-header {
@@ -310,45 +340,53 @@ li {
 
 .arxiv-id {
     display: inline;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
     color: #000000;
-}
-
-.arxiv-id::after {
-    content: "\A";
-    /* Inserts a newline */
-    white-space: pre;
-    display: block;
-    line-height: 0.3em;
 }
 
 .institute-line {
     display: flex;
-    align-items: flex-start;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    align-items: center;
+    margin-bottom: 2px;
+    margin-top: 2px;
 }
 
 .institute-icon {
     width: 16px;
     height: 16px;
+    padding-bottom: 3px;
     margin-right: 5px;
 }
 
-.primary-text {
-    font-family: 'Roboto', sans-serif;
+.arxiv-icon {
+    width: 16px;
+    height: 16px;
+    padding-bottom: 1px;
+    margin-right: 5px;
+}
+
+.institute-text {
+    font-family: "Source Sans 3", sans-serif;
     line-height: 1.2;
     font-weight: 400;
-    font-size: 15px;
+    font-size: 16px;
+    color: #000000;
+}
+
+.primary-text {
+    font-family: "Source Sans 3", sans-serif;
+    line-height: 1.2;
+    font-weight: 400;
+    font-size: 16px;
     color: #000000;
 }
 
 .secondary-text {
-    font-family: 'Roboto', sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     line-height: 1.2;
-    font-weight: 300;
+    font-weight: 400;
     font-size: 15px;
     color: #616161;
 }
@@ -356,25 +394,27 @@ li {
 .launch-status {
     background-color: #1FB36E;
     border-radius: 5px;
-    font-size: 15px;
+    font-size: 16px;
     color: #ffffff;
-    font-family: 'Roboto', sans-serif;
+    font-family: "Source Sans 3", sans-serif;
     font-size: 13px;
     font-weight: 400;
     padding: 2px 5px;
 }
 
-.institute-text {
-    line-height: 1.2;
-    font-weight: 300;
-    font-size: 15px;
-    color: #000000;
+.play-image {
+    font-size: 13px;
+    /* border-radius: 2.5px;
+    padding: 1px 2px; */
+    /* border: 1px solid black; */
+    margin-bottom: 2px;
 }
 
 .institute-text-small {
+    font-family: "Source Sans 3", sans-serif;
     line-height: 1.2;
-    font-weight: 300;
-    font-size: 13px;
+    font-weight: 400;
+    font-size: 15px;
     color: #000000;
     display: -webkit-box;
     /* Display as a flexbox */
@@ -589,9 +629,9 @@ button {
     border: none;
     overflow-y: auto;
     /* Enable vertical scrolling if content overflows */
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
 }
 
 /* Close button */
@@ -621,9 +661,9 @@ button {
     justify-content: center;
     /* Black border as specified */
     border-radius: 5px;
-    font-family: 'Roboto', sans-serif;
-    font-weight: 300;
-    font-size: 13px;
+    font-family: "Source Sans 3", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
     /* Rounded corners for the rectangle */
     cursor: pointer;
     padding: 0 0;
@@ -674,13 +714,9 @@ button {
     }
 
     .page-title {
-        font-family: 'Dosis', sans-serif;
+        font-family: "Source Sans 3", sans-serif;
         font-size: 22px;
-        font-weight: 700;
-    }
-
-    .start-time-icon {
-        font-size: 13px;
+        font-weight: 600;
     }
 
     .primary-text {
@@ -701,7 +737,7 @@ button {
     }
 
     .arxiv-id {
-        font-size: 14px;
+        font-size: 15px;
     }
 
     .player-detail-hidden-on-small-screen {
