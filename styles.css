@@ -203,7 +203,7 @@ li {
 }
 
 .menu-item-text {
-    text-decoration: none;
+    /* text-decoration: none; */
     color: #1FB36E;
 }
 
