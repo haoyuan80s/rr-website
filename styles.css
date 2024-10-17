@@ -203,8 +203,8 @@ li {
 }
 
 .menu-item-text {
-    /* text-decoration: none; */
-    color: #1FB36E;
+    text-decoration: none;
+    color: #1FB36E !important;
 }
 
 .externalLinkMenuItemMandatory {
