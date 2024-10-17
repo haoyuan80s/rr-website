@@ -267,16 +267,6 @@ function playAdjacentTweet(next) {
     }
 }
 
-// Function to open the privacy modal
-function openPopup(name) {
-    document.getElementById(name).style.display = "flex";
-}
-
-// Function to close the privacy modal
-function closePopup(name) {
-    document.getElementById(name).style.display = "none";
-}
-
 const selectButton = document.querySelector('#selectedSpeed');
 const selectOptions = document.querySelectorAll('.speedMenuItems div');
 const selectElement = document.getElementById('speedOptionsHidden');

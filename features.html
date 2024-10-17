@@ -287,7 +287,7 @@
             </div>
         </div>
     </div>
-    <div id="privacyModal" class="modal"></div>
+
     <script src="script.js"></script>
     <script>
         fetch('https://ribbitribbit.co/header.html')
@@ -296,12 +296,7 @@
                 document.getElementById('headerId').innerHTML = data;
             })
             .catch(error => console.error('Error loading header.html:', error));
-        fetch('https://ribbitribbit.co/terms.html')
-            .then(response => response.text()) // Convert the response to text
-            .then(data => {
-                document.getElementById('privacyModal').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading terms.html:', error));
+
     </script>
 </body>
 
