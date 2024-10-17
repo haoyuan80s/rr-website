@@ -204,7 +204,7 @@ li {
 
 .menu-item-text {
     text-decoration: none;
-    color: #1FB36E !important;
+    color: var(--general-fg) !important;
 }
 
 .externalLinkMenuItemMandatory {
