@@ -202,15 +202,18 @@ li {
     display: block;
 }
 
+.menu-item-text {
+    text-decoration: none;
+    color: #1FB36E;
+}
+
 .externalLinkMenuItemMandatory {
     display: flex;
-    color: var(--general-fg);
 }
 
 .externalLinkMenuItem {
     display: none;
     align-items: center;
-    color: var(--general-fg);
 }
 
 /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
