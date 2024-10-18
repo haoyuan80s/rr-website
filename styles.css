@@ -2,7 +2,7 @@ html,
 
 :root {
     --header-height: 60px;
-    --footer-height: 65px;
+    --footer-height: 70px;
     --footer-color: #ffffff;
     --general-bg: #ffffff;
     --general-fg: #000000;
@@ -182,7 +182,7 @@ li {
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color: var(--footer-color);
+    background-color: var(--card-bg);
     color: var(--general-fg);
     padding: 3px 0;
     font-weight: 400;
@@ -503,8 +503,8 @@ button {
     padding: 0px 10px;
     margin-left: 6px;
     /* Set width and height to the same size for a square */
-    height: 40px;
-    width: 40px;
+    height: 45px;
+    width: 45px;
     /* Padding inside the button */
 }
 
@@ -644,19 +644,19 @@ button {
     cursor: pointer;
     padding: 0 0;
     /* Set width and height to the same size for a square */
-    height: 40px;
-    width: 40px;
+    height: 44px;
+    width: 44px;
 }
 
 /* Style the dropdown */
 .speedMenuItems {
     display: none;
     position: absolute;
-    background-color: var(--footer-color);
+    background-color: var(--card-bg);
     padding: 3px 0;
     font-weight: 400;
     font-size: 16px;
-    min-width: 100px;
+    min-width: 150px;
     border-radius: 5px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     z-index: 1;
@@ -741,19 +741,19 @@ button {
 
 @media (prefers-color-scheme: dark) {
     :root {
-        --footer-color: #121212;
-        --general-bg: #121212;
+        --footer-color: #0D0D0D;
+        --general-bg: #0D0D0D;
         --general-fg: #ffffff;
         --card-bg: #1C1C1E;
-        --secondary-text: #808080;
+        --secondary-text: #8E8E93;
     }
 
     .dropdown-content {
-        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .play-full-list-button {
-        background: #808080;
+        background: #ffffff;
     }
 
     #progressContainer {
@@ -761,7 +761,7 @@ button {
     }
 
     .speedMenuItems {
-        box-shadow: 0 2px 5px rgba(255, 255, 255, 0.2);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
     }
 
     .arxiv-icon {
