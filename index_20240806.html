@@ -19,9 +19,10 @@
     <div id="headerId" class="header"></div>
     <div class="container">
         <div id="topblock">
-            <div style="height: 150px;"></div>
-            <div class="page-title">DISCOVER RESEARCH THE FUN WAY</div> <button class="play-full-list-button"
-                onclick="togglePlayPause()" title="Play/Pause">
+
+            <div id="announcement-id"></div>
+            <div style=" height: 80px;"></div>
+            <button class="play-full-list-button" onclick="togglePlayPause()" title="Play/Pause">
                 <img class="play-full-list" src="assets/buttonPlayRecommendation.svg" alt="Play">
             </button>
             <div style="display: flex; flex-direction: column; justify-content: flex-start; align-items: flex-start;">
@@ -111,7 +112,12 @@
                 document.getElementById('headerId').innerHTML = data;
             })
             .catch(error => console.error('Error loading header.html:', error));
-
+        fetch('https://ribbitribbit.co/announcement.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('announcement-id').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading announcement.html:', error));
     </script>
     <script src="data_20240806.js"></script>
     <script src="calendar.js"></script>

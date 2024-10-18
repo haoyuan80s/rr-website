@@ -455,10 +455,10 @@ button {
 
 .footerButtonMask {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+    top: -3;
+    left: -3;
+    width: 51px;
+    height: 51px;
     opacity: 0.8;
     background-color: var(--footer-color);
     /* Adjust the opacity to control how much of the content is visible */
@@ -466,8 +466,22 @@ button {
     /* Make sure the mask doesn't block interaction with the content */
 }
 
+#playLastButton {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#playNextButton {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 .play-full-list {
-    height: 70px;
+    height: 50px;
 }
 
 .play-full-list-button {
@@ -481,10 +495,9 @@ button {
     border-radius: 5px;
     cursor: pointer;
     margin: 10px 0;
-    height: 75px;
-    width: 75px;
+    height: 55px;
+    width: 55px;
 }
-
 
 .controllerButton {
     display: flex;
@@ -495,13 +508,13 @@ button {
     justify-content: center;
     /* Center-align children vertically */
     background-color: #1FB36E;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
     /* Black border as specified */
     border-radius: 5px;
     border: none;
     /* Rounded corners for the rectangle */
     cursor: pointer;
     padding: 0px 10px;
-    margin-left: 6px;
     /* Set width and height to the same size for a square */
     height: 45px;
     width: 45px;
@@ -579,6 +592,7 @@ button {
     align-items: center;
     justify-content: center;
     padding: 5px 0;
+    gap: 6px;
 }
 
 #progressContainer {
@@ -644,8 +658,9 @@ button {
     cursor: pointer;
     padding: 0 0;
     /* Set width and height to the same size for a square */
-    height: 44px;
-    width: 44px;
+    height: 45px;
+    width: 45px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
 }
 
 /* Style the dropdown */
@@ -694,10 +709,6 @@ button {
 
 .rr-text1 {
     content: url('assets/AppLaunchText1.gif');
-}
-
-.rr-text2 {
-    content: url('assets/AppLaunchText2.gif');
 }
 
 @media (max-width: 600px) {
