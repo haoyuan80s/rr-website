@@ -106,22 +106,23 @@
     </footer>
 
     <script>
-fetch('https://ribbitribbit.co/header.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('headerId').innerHTML = data;
-})
-.catch(error => console.error('Error loading header.html:', error));
-fetch('https://ribbitribbit.co/announcement.html')
-.then(response => response.text())
-.then(data => {
-    document.getElementById('announcement-id').innerHTML = data;
-})
-.catch(error => console.error('Error loading announcement.html:', error));
+        fetch('https://ribbitribbit.co/header.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('headerId').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header.html:', error));
+        fetch('https://ribbitribbit.co/announcement.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('announcement-id').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading announcement.html:', error));
     </script>
     <script src="data_20240808.js"></script>
     <script src="calendar.js"></script>
     <script src="script.js"></script>
+    <script src="header.js"></script>
 </body>
 
 </html>

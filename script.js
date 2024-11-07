@@ -8,24 +8,6 @@ function formatSeconds(total_sec) {
 }
 
 
-// The Dropdown Menu 
-function ToggleDropDown() {
-    document.getElementById("myDropdown").classList.toggle("show");
-}
-// Close the dropdown menu if the user clicks outside of it
-window.onclick = function (event) {
-    if (!event.target.matches('#menuButtonId') && !event.target.matches('.dropbtn')) {
-        var dropdowns = document.getElementsByClassName("dropdown-content");
-        var i;
-        for (i = 0; i < dropdowns.length; i++) {
-            var openDropdown = dropdowns[i];
-            if (openDropdown.classList.contains('show')) {
-                openDropdown.classList.remove('show');
-            }
-        }
-    }
-}
-
 var audio = document.getElementById('audioPlayer');
 var playPauseImage = document.getElementById('playPauseImage');
 var progressBar = document.getElementById('progressBar');
