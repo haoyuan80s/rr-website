@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ribbit Ribbit - Submit Feedback or Request</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap">
+    <link rel="icon" href="assets/frogFavicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <div id="headerId" class="header"></div>
+    <div class="container">
+        <div id="topblock" style="padding-top: 3px; line-height: 1.2;">
+            <div style="height: 150px;"></div>
+            <div class="page-title">
+                FEEDBACK OR REQUEST
+            </div>
+            <div style="height: 5px;"></div>
+            <div class="institute-text">
+                Got something to say? Whether it's a "wow, this is awesome✨," a "hmm, this could be better🤔," or even a
+                "help, this thing is broken!🚨". Just pick your issue below, drop us a note, and we'll hop right on it!
+            </div>
+            <div style="height: 80px;"></div>
+        </div>
+        <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLScVegj_KvXyYK7qb4WnJswJju4FyPQXqMUwo1PrEuXQghJtWA/viewform?embedded=true"
+            width="640" height="1000" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <div style="height: 150px;"></div>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        fetch('https://ribbitribbit.co/header.html')
+            .then(response => response.text()) // Convert the response to text
+            .then(data => {
+                document.getElementById('headerId').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading header.html:', error));
+
+    </script>
+</body>
+
+</html>
