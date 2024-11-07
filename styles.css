@@ -703,6 +703,10 @@ button {
     content: url('assets/buttonFeatures.svg');
 }
 
+.request-icon {
+    content: url('assets/buttonRequest.svg');
+}
+
 .privacy-icon {
     content: url('assets/iconPrivacy.svg');
 }
@@ -789,6 +793,10 @@ button {
 
     .feature-icon {
         content: url('assets/buttonFeaturesWhite.svg');
+    }
+
+    .request-icon {
+        content: url('assets/buttonRequestWhite.svg');
     }
 
     .privacy-icon {
